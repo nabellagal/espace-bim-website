@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="fr">
 <head>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SHJRD6R57"></script>
@@ -11,24 +11,24 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Espace_BIM — ES</title>
+<title>Espace_BIM — FR</title>
 <!-- Meta Tags SEO -->
-<meta name="description" content="Espace_BIM - Tu departamento BIM externo. Modelado BIM, construcción 3D, digitalización de proyectos de arquitectura e ingeniería. Disponible cuando lo necesites.">
-<meta name="keywords" content="BIM, Revit, AutoCAD, modelado 3D, arquitectura, ingeniería, digitalización, nubes de puntos, fotogrametría">
+<meta name="description" content="Espace_BIM - Your external BIM department. BIM modeling, 3D construction, digitization of architecture and engineering projects. Available when you need it.">
+<meta name="keywords" content="BIM, Revit, AutoCAD, 3D modeling, architecture, engineering, digitization, point clouds, photogrammetry">
 <meta name="author" content="Espace_BIM">
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph Tags (para redes sociales) -->
-<meta property="og:title" content="Espace_BIM - Tu departamento BIM externo">
-<meta property="og:description" content="Modelado BIM, construcción 3D, digitalización de proyectos de arquitectura e ingeniería">
+<meta property="og:title" content="Espace_BIM - Your external BIM department">
+<meta property="og:description" content="BIM modeling, 3D construction, digitization of architecture and engineering projects">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.espacerbim.com">
 <meta property="og:image" content="https://www.espacerbim.com/images/logo.jpg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Espace_BIM - Tu departamento BIM externo">
-<meta name="twitter:description" content="Modelado BIM, construcción 3D, servicios de digitalización">
+<meta name="twitter:title" content="Espace_BIM - Your external BIM department">
+<meta name="twitter:description" content="BIM modeling, 3D construction, digitization services">
 <meta name="twitter:image" content="https://www.espacerbim.com/images/logo.jpg">
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -48,14 +48,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Cada fila = sección completa (azul + verde) */
+/* Cada fila = sección completa (bleu + vert) */
 .section-row {
   display: flex;
   width: 100%;
   min-height: 15vh;
 }
 
-/* Columna azul 1/3 (con flex, para no invadir el verde) */
+/* Colonne bleue 1/3 (avec flex, pour ne pas envahir le vert) */
 .col-left {
   flex: 0 0 33.33%;
   max-width: 33.33%;
@@ -65,36 +65,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-end; /* todo alineado a la derecha */
+  align-items: flex-end; /* tout aligné à droite */
   text-align: right;
 }
 
-/* Columna azul SOLO para secciones (Soluciones, etc.) */
+/* Colonne bleue UNIQUEMENT pour sections (Solutions, etc.) */
 .col-left-section-title {
   justify-content: flex-start;
 }
 
-/* Columna azul — título de sección */
+/* Colonne bleue — titre de section */
 .col-left-section-title .section-label {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-/* Columna azul INICIO (branding) */
+/* Colonne bleue ACCUEIL (branding) */
 .col-left-inicio h1 {
-  font-size: 4.6rem;         /* ESPACE_BIM grande casi todo 1/3 */
+  font-size: 4.6rem;         /* ESPACE_BIM grand presque tout 1/3 */
   line-height: 1.05;
   margin: 0 0 10px 0;
 }
 
 .col-left-inicio h2 {
-  font-size: 2.3rem;         /* aprox. mitad de ESPACE_BIM */
+  font-size: 2.3rem;         /* environ moitié de ESPACE_BIM */
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 .col-left-inicio p {
-  font-size: 1.3rem;         /* texto introductorio más grande */
+  font-size: 1.3rem;         /* texte introductif plus grand */
   line-height: 1.5;
   margin: 0 0 10px 0;
   max-width: 360px;
@@ -119,35 +119,35 @@ body {
   text-decoration: underline;
 }
 
-/* Columna verde 2/3 */
+/* Colonne verte 2/3 */
 .col-right {
   flex: 0 0 66.67%;
   max-width: 66.67%;
   background: #A8F8E8;
-  padding: 60px 80px; /* ← 80px en ambos lados */
+  padding: 60px 80px; /* ← 80px des deux côtés */
   color: #003b4d;
 }
 
 .col-right p {
   font-size: 1.15rem;
   line-height: 1.55;
-  margin: 0 0 8px 0; /* margen inferior reducido (más compacto) */
+  margin: 0 0 8px 0; /* marge inférieure réduite (plus compact) */
   color: #777777 !important; 
 }
 
-/* Ajuste específico INICIO: el carrusel ocupa todo, sin padding */
+/* Ajustement spécifique ACCUEIL: le carrousel occupe tout, sans padding */
 #inicio .col-right {
   padding: 0;
 }
 
 /* ============================ */
-/*  MENÚ SUPERIOR CENTRADO      */
+/*  MENU SUPERIEUR CENTRÉ       */
 /* ============================ */
 #main-nav {
   position: fixed;
   top: 20px;
-  left: 33.33%;          /* empieza donde empieza la zona verde */
-  width: 66.67%;         /* ocupa todo el ancho de la zona verde */
+  left: 33.33%;          /* commence où commence la zone verte */
+  width: 66.67%;         /* occupe toute la largeur de la zone verte */
   z-index: 50;
 }
 
@@ -167,20 +167,20 @@ body {
 
 #main-nav a {
   text-decoration: none;
-  color: #333333 !important;     /* GRIS OSCURO */
-  font-weight: 400 !important;   /* FINO */
+  color: #333333 !important;     /* GRIS FONCÉ */
+  font-weight: 400 !important;   /* FIN */
   font-size: 0.9rem;
   cursor: pointer;
 }
 
 #main-nav a:hover {
-  color: #28f4ad !important;     /* VERDE AL HOVER */
+  color: #28f4ad !important;     /* VERT AU HOVER */
 }
 
-/* Submenús: centrados bajo la palabra, sin fondo */
+/* Sous-menus: centrés sous le mot, sans fond */
 .submenu {
   position: absolute;
-  top: 150%;              /* un poco por debajo de la palabra */
+  top: 150%;              /* un peu en dessous du mot */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -188,7 +188,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  pointer-events: none; /* se activa sólo cuando el padre está en hover */
+  pointer-events: none; /* s'active seulement quand le parent est en hover */
   z-index: 100;  
 }
 
@@ -199,9 +199,9 @@ body {
   text-decoration: none;
 }
 .submenu a:hover {
-  color: #28f4ad !important; /* VERDE CLARO AL HOVER */
+  color: #28f4ad !important; /* VERT CLAIR AU HOVER */
 }
-/* Zona de tolerancia invisible para no perder el hover */
+/* Zone de tolérance invisible pour ne pas perdre le hover */
 .has-submenu {
   position: relative;
 }
@@ -223,7 +223,7 @@ body {
 }
 
 /* ============================ */
-/* ENLACES AZULES               */
+/* LIENS BLEUS                  */
 /* ============================ */
 .enlace {
   color: #006E91 !important;
@@ -243,7 +243,7 @@ body {
 }
 
 /* ============================ */
-/*  CARRUSEL SWIPER             */
+/*  CARROUSEL SWIPER            */
 /* ============================ */
 #carrusel {
   width: 100%;
@@ -266,7 +266,7 @@ body {
   object-fit: cover;
 }
 
-/* FLECHAS CARRUSEL */
+/* FLÈCHES CARROUSEL */
 .swiper-button-next,
 .swiper-button-prev {
   color: #006E91 !important;
@@ -283,13 +283,13 @@ body {
   justify-content: center !important;
 }
 
-/* Elimina flechas por defecto de Swiper */
+/* Supprime les flèches par défaut de Swiper */
 .swiper-button-next:after,
 .swiper-button-prev:after {
   display: none !important;
 }
 
-/* Tus flechas personalizadas para CARRUSEL */
+/* Tes flèches personnalisées pour CARROUSEL */
 .swiper-button-next:before {
   content: '›' !important;
 }
@@ -317,7 +317,7 @@ body {
   width: 75%;
   height: 70vh;
   background: #7DE3CD;
-  padding: 50px 90px; /* más padding lateral para que flechas no pisen texto/foto */
+  padding: 50px 90px; /* plus de padding latéral pour que les flèches n'écrasent pas le texte/photo */
   box-sizing: border-box;
   display: flex;
   position: relative;
@@ -327,12 +327,12 @@ body {
   width: 50%;
   height: 100%;
   overflow-y: auto;
-  padding-right: 70px; /* Más padding para el scroll */
-  margin-right: 30px;  /* Más separación de la imagen */
+  padding-right: 70px; /* Plus de padding pour le scroll */
+  margin-right: 30px;  /* Plus de séparation de l'image */
   font-size: 1.05rem;
   line-height: 1.55;
   color: #003b4d;
-  border-right: 1px solid rgba(0, 110, 145, 0.2); /* Línea sutil opcional */
+  border-right: 1px solid rgba(0, 110, 145, 0.2); /* Ligne subtile optionnelle */
 }
 
 .modal-texto h2 {
@@ -366,7 +366,7 @@ body {
   cursor: pointer;
 }
 
-/* Flechas del modal: grandes, pero fuera de la zona de texto/foto */
+/* Flèches du modal: grandes, mais hors de la zone de texte/photo */
 .flecha {
   position: absolute;
   top: 50%;
@@ -383,28 +383,31 @@ body {
 }
 
 /* ============================ */
-/* FOOTER LOGO BANDA 2/3        */
+/* FOOTER LOGO BANDE 2/3        */
 /* ============================ */
 
 footer {
   background: #006E91;
   padding: 40px 0;
-  width: 100%; /* Banda azul ocupa todo el ancho */
+  width: 100%; /* Bande bleue occupe toute la largeur */
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido a la derecha (zona verde) */
+  justify-content: flex-end; /* Aligne le contenu à droite (zone verde) */
 }
 
 footer .logo-container {
-  width: 66.67%; /* Ancho de la zona verde */
+  width: 66.67%; /* Largeur de la zone verde */
   display: flex;
-  justify-content: center; /* Centra el logo dentro de la zona verde */
+  justify-content: center; /* Centre le logo dans la zona verde */
 }
 
 footer img {
   height: 110px;
 }
 
-
+/* OCULTAR TODAS LAS VERSIONES MOBILE EN ORDENADOR */
+.mobile-version {
+  display: none !important;
+}
 @media (max-width: 960px) {
   /* 1. HEADER MOBILE VISIBLE Y PEQUEÑO */
   .mobile-header {
@@ -412,7 +415,42 @@ footer img {
     height: 60px;
     padding: 8px 20px;
   }
+  @media (max-width: 960px) {
+  /* ... código existente ... */
   
+  /* ============================ */
+  /*  ACORDEONES MÓVIL - NUEVO   */
+  /* ============================ */
+  
+  /* OCULTAR TÍTULO ORIGINAL EN MÓVIL */
+  .col-left-section-title .section-label {
+    display: none !important;
+  }
+  
+  /* MOSTRAR ESTRUCTURA DE ACORDEÓN */
+  .col-left-section-title.mobile-accordion {
+    display: flex !important;
+    flex-direction: column;
+  }
+  
+  /* SOLUTIONS - Acordeón específico */
+  #soluciones .col-left-section-title::before {
+    content: "SOLUCIONES";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  /* MÉTHODOLOGIE - Acordeón específico */
+  #metodologia .col-left-section-title::before {
+    content: "METODOLOGÍA";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+}
   .mobile-header img {
     height: 40px;
   }
@@ -422,7 +460,19 @@ footer img {
     display: none !important;
   }
   
-  
+    /* 3. OCULTAR SECCIONES ESCRITORIO EN MÓVIL */
+ #soluciones, 
+#metodologia,
+#valoraciones .col-left,
+#valores .col-left,
+#contacto .col-left {
+    display: none !important;
+  }
+
+  /* 4. MOSTRAR SECCIONES MÓVIL */
+  .mobile-version {
+    display: flex !important;
+  }
   /* 4. ESTRUCTURA PRINCIPAL COLUMNAS */
   .section-row {
     flex-direction: column;
@@ -439,11 +489,12 @@ footer img {
   }
   
   /* 5. MARGIN TOP PARA LA PRIMERA SECCIÓN (debajo del header mobile) */
-  @media (max-width: 960px) {
-    #inicio {
-      margin-top: 140px !important;
-    }
+/* Por esto: */
+@media (max-width: 960px) {
+  #inicio {
+    margin-top: 140px !important;
   }
+}
   /* 6. TEXTO MOBILE */
   .col-left-inicio h1 {
     font-size: 2.8rem;
@@ -529,23 +580,6 @@ footer img {
     width: 100%;
   }
   
-   /* 11. OCULTAR SECCIONES AZULES EXCEPTO ACORDEONES */
-  .col-left-section-title:not(.mobile-accordion) {
-    display: none !important;
-  }
-  
-  .mobile-accordion {
-    display: flex !important;
-    position: relative;
-    padding-bottom: 20px !important;
-    align-items: flex-start !important;
-  }
-  
-  .accordion-title-mobile {
-    cursor: pointer;
-    width: 100%;
-  }
-  
   /* 11. IDIOMAS ALINEADO IZQUIERDA */
   #idiomas {
     text-align: left;
@@ -556,54 +590,57 @@ footer img {
 /*  ACORDEÓN EN SECCIONES EXISTENTES - MOBILE */
 /* ============================ */
 @media (max-width: 960px) {
+
+  /* Banda azul unificada */
   .mobile-accordion {
-    position: relative;
-    padding-bottom: 20px !important;
+    width: 100% !important;
+    background: #006E91 !important;
+    padding: 20px 25px !important;  
+    margin: 0;
+    box-sizing: border-box;
   }
-  
+
+  /* Títulos grandes alineados a la derecha */
   .accordion-title-mobile {
-    cursor: pointer;
-    padding: 15px 0;
+    font-size: 1.5rem !important;        /* mucho más grande */
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-align: right !important;      /* alineación a la derecha */
+    padding-right: 40px !important;    /* espacio para la flecha */
     position: relative;
   }
-  
-  .accordion-title-mobile:after {
+
+  /* Flecha bien colocada */
+  .accordion-title-mobile::after {
     content: '▼';
-    font-size: 0.8rem;
-    margin-left: 10px;
-    transition: transform 0.3s ease;
+    font-size: 1.3rem !important;      /* flecha más grande */
+    position: absolute;
+    right: 0;                          /* flecha al borde */
+    top: 50%;                          /* centrada */
+    transform: translateY(-50%);
+    transition: transform 0.25s ease;
   }
-  
-  .accordion-title-mobile.active:after {
-    transform: rotate(180deg);
+
+  /* Flecha al abrir */
+  .accordion-title-mobile.active::after {
+    transform: translateY(-50%) rotate(180deg);
   }
-  
+
+  /* Submenú transparente */
   .accordion-content-mobile {
     display: none;
-    background: #005a7a;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: left !important;
+    padding-top: 12px;
+    background: transparent;
   }
-  
+
   .accordion-content-mobile a {
     display: block;
-    color: #ffffff !important;
-    padding: 10px 0;
+    margin-bottom: 8px;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #004a65;
-    font-weight: 400 !important;
-  }
-  
-  .accordion-content-mobile a:last-child {
-    border-bottom: none;
-  }
-  
-  .accordion-content-mobile a:hover {
-    color: #28f4ad !important;
   }
 }
+
 /* ============================ */
 /*  RESPONSIVE PANTALLAS MEDIANAS (16") */
 /* ============================ */
@@ -684,10 +721,71 @@ footer img {
   width: auto;
 }
 
-/* Mostrar solo en móvil */
+/* ============================ */
+/*  RESPONSIVE MOBILE (max-width: 960px) */
+/* ============================ */
 @media (max-width: 960px) {
   .mobile-header {
     display: flex !important;
+    height: 80px !important; /* Reducir altura */
+    padding: 10px 20px !important;
+  }
+
+  .mobile-header img {
+    height: 60px !important; /* Logo más grande */
+    width: auto;
+  }
+
+  /* MOBILE TEXT */
+  .col-left-inicio h1 {
+    font-size: 2.8rem;
+  }
+  
+  .col-left-inicio h2 {
+    font-size: 1.4rem;
+  }
+
+  /* MOBILE MODAL */
+  .modal-contenido {
+    flex-direction: column !important;
+    height: 90vh !important;
+    width: 95% !important;
+    padding: 20px !important;
+  }
+
+  .modal-texto, 
+  .modal-img {
+    width: 100% !important;
+  }
+
+  .modal-texto {
+    height: 60% !important;
+    padding-right: 0 !important;
+    overflow-y: auto;
+  }
+
+  .modal-img {
+    height: auto !important;
+    max-height: 300px !important;
+    object-fit: contain !important;
+    margin-top: 20px;
+  }
+  
+  #inicio {
+    margin-top: 160px !important; /* 80px header + 80px nav */
+  }
+
+  /* Asegurar que no se vea fondo verde */
+  body {
+    background: #006E91 !important; /* Azul en móvil para que no se vea verde */
+  }
+
+  .section-row {
+    background: #006E91 !important;
+  }
+
+  .col-right {
+    background: #A8F8E8 !important; /* Solo la columna derecha verde */
   }
 }
 </style>
@@ -696,11 +794,11 @@ footer img {
 
     <!-- ======================= HEADER MOBILE ======================= -->
     <div class="mobile-header">
-        <img src="images/logo.jpg" alt="Espace_BIM logo">
+     <img src="/images/logo.jpg" alt="Espace_BIM logo">
     </div>
 
 
-<!-- ======================= MENÚ SUPERIOR DESKTOP ======================= -->
+<!-- ======================= MENU SUPERIEUR DESKTOP ======================= -->
 <nav id="main-nav">
   <ul>
     <li><a href="#inicio" class="scrolly">Inicio</a></li>
@@ -708,9 +806,9 @@ footer img {
     <li class="has-submenu">
       <a href="#soluciones" class="scrolly">Soluciones</a>
       <ul class="submenu">
-        <li><a href="#" data-modal="refuerzo">Refuerzo BIM</a></li>
-        <li><a href="#" data-modal="implementacion">Implementación</a></li>
-        <li><a href="#" data-modal="expertise">Experiencia</a></li>
+        <li><a href="#" data-modal="refuerzo">Renfuerzo BIM</a></li>
+        <li><a href="#" data-modal="implementacion">Implémentation</a></li>
+        <li><a href="#" data-modal="expertise">Expertise</a></li>
       </ul>
     </li>
     
@@ -719,11 +817,11 @@ footer img {
       <ul class="submenu">
         <li><a href="#" data-modal="flujo">Flujo de trabajo</a></li>
         <li><a href="#" data-modal="formatos">Formatos aceptados</a></li>
-        <li><a href="#" data-modal="calidad">Compromiso de calidad</a></li>
+        <li><a href="#" data-modal="calidad">Compromiso calidad</a></li>
       </ul>
     </li>
     
-    <li><a href="#" data-modal="valoraciones">Testimonios</a></li>
+    <li><a href="#" data-modal="valoraciones">Valoraciones</a></li>
     <li><a href="#" data-modal="valores">Valores</a></li>
     <li><a href="#contacto" class="scrolly">Contacto</a></li>
   </ul>
@@ -731,63 +829,114 @@ footer img {
 
 
 
-<!-- ======================= INICIO ======================= -->
+<!-- ======================= ACCUEIL ======================= -->
 <section id="inicio" class="section-row">
-  <!-- Columna azul -->
+  <!-- Colonne bleue -->
   <div class="col-left col-left-inicio">
     <h1>ESPACE_BIM</h1>
     <h2>Tu departamento BIM externo, disponible cuando lo necesites.</h2>
     <p>
-      Recupera el control de tus plazos con nuestro equipo especializado en modelado y documentación técnica.
-      Tomamos tus proyectos desde cualquier etapa y los entregamos listos, con el rigor que exige la profesión.
+      Recupera el control de tus plazos con nuestro equipo especializado en modelado y documentación técnica. Tomamos tus proyectos en cualquier fase y los entregamos listos para usar, con el rigor que exige la profesión.
     </p>
-  <div id="idiomas">
+ <div id="idiomas">
   <strong>Idioma:</strong>
-  <a href="index.html">FR</a> |
-  <a href="index-es.html">ES</a> |
-  <a href="index-en.html">EN</a> |
-  <a href="index-de.html">DE</a>
+  <a href="/">FR</a> |           <!-- Cambiado: index.html → / -->
+  <a href="/es/">ES</a> |        <!-- Cambiado: index-es.html → /es/ -->
+  <a href="/en/">EN</a> |        <!-- Cambiado: index-en.html → /en/ -->
+  <a href="/de/">DE</a>          <!-- Cambiado: index-de.html → /de/ -->
 </div>
   </div>
 
-  <!-- Columna verde: solo carrusel -->
+  <!-- Colonne verte: seulement carrousel -->
   <div class="col-right">
     <div id="carrusel" class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/Foto1.png" alt="Proyecto 1"></div>
-        <div class="swiper-slide"><img src="images/Foto2.png" alt="Proyecto 2"></div>
-        <div class="swiper-slide"><img src="images/Foto3.png" alt="Proyecto 3"></div>
-        <div class="swiper-slide"><img src="images/Foto4.png" alt="Proyecto 4"></div>
-        <div class="swiper-slide"><img src="images/Foto5.png" alt="Proyecto 5"></div>
-        <div class="swiper-slide"><img src="images/Foto6.png" alt="Proyecto 6"></div>
-        <div class="swiper-slide"><img src="images/Foto7.png" alt="Proyecto 7"></div>
-        <div class="swiper-slide"><img src="images/Foto8.png" alt="Proyecto 8"></div>
+<div class="swiper-slide"><img src="../images/Foto1.png" alt="Projet 1"></div>
+<div class="swiper-slide"><img src="../images/Foto2.png" alt="Projet 2"></div>
+<div class="swiper-slide"><img src="../images/Foto3.png" alt="Projet 3"></div>
+<div class="swiper-slide"><img src="../images/Foto4.png" alt="Projet 4"></div>
+<div class="swiper-slide"><img src="../images/Foto5.png" alt="Projet 5"></div>
+<div class="swiper-slide"><img src="../images/Foto6.png" alt="Projet 6"></div>
+<div class="swiper-slide"><img src="../images/Foto7.png" alt="Projet 7"></div>
+<div class="swiper-slide"><img src="../images/Foto8.png" alt="Projet 8"></div>
       </div>
-      <!-- Flechas grandes -->
+      <!-- Grandes flèches -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
   </div>
+</section> 
+<!-- ======================= SOLUTIONS MOBILE ======================= -->
+<section id="soluciones-mobile" class="section-row mobile-version">
+  
+  <!-- BANDA AZUL: acordeón -->
+  <div class="col-left col-left-section-title mobile-accordion">
+    <div class="accordion-title-mobile" data-target="soluciones-submenu">
+      SOLUCIONES
+    </div>
+
+    <div class="accordion-content-mobile" id="soluciones-submenu">
+      <a href="#" data-modal="refuerzo">Refuerzo BIM</a>
+      <a href="#" data-modal="implementacion">Implémentation</a>
+      <a href="#" data-modal="expertise">Expertise</a>
+    </div>
+  </div>
+
+  <!-- BANDA VERDE: texto verde -->
+  <div class="col-right">
+    <p>Cuando tu equipo está saturado, aportamos capacidad adicional. Cuando un concurso requiere impacto visual, creamos renders y visitas virtuales. Cuando necesitas documentación de ejecución, entregamos planos listos para construcción.</p>
+
+    <p><span class="enlace" data-modal="refuerzo">Renfuerzo BIM</span> : Más manos, mismos estándares.</p>
+    <p><span class="enlace" data-modal="implementacion">Evolución digital / Implementación BIM</span> : Del CAD al BIM sin fricción.</p>
+    <p><span class="enlace" data-modal="expertise">Servicios altamente especializados</span> : Expertise técnica cuando la complejidad supera lo ordinario.</p>
+  </div>
+
 </section>
 
-<!-- ======================= SOLUCIONES ======================= -->
+<!-- ======================= SOLUTIONS ======================= -->
 <section id="soluciones" class="section-row">
+  <!-- Colonne bleue -->
   <div class="col-left col-left-section-title">
     <div class="section-label">SOLUCIONES</div>
   </div>
 
+  <!-- Colonne verde (se mantiene igual) -->
   <div class="col-right">
     <p>Cuando tu equipo está saturado, aportamos capacidad adicional. Cuando un concurso requiere impacto visual, creamos renders y visitas virtuales. Cuando necesitas documentación de ejecución, entregamos planos listos para construcción.</p>
-
-    <p><span class="enlace" data-modal="refuerzo">Refuerzo de capacidad BIM</span><span class="texto-descriptivo">: Más manos, mismos estándares.</span></p>
-
-    <p><span class="enlace" data-modal="implementacion">Evolución digital / Implementación BIM</span><span class="texto-descriptivo">: De CAD a BIM sin fricciones.</span></p>
-
-    <p><span class="enlace" data-modal="expertise">Servicios altamente especializados</span><span class="texto-descriptivo">: Expertise técnico cuando la complejidad supera lo habitual.</span></p>
+    
+    <p><span class="enlace" data-modal="refuerzo">Renfuerzo BIM</span><span class="texto-descriptivo"> : Más manos, mismos estándares.</span></p>
+    <p><span class="enlace" data-modal="implementacion">Evolución digital / Implementación BIM</span><span class="texto-descriptivo"> : Del CAD al BIM sin fricción.</span></p>
+    <p><span class="enlace" data-modal="expertise">Servicios altamente especializados</span><span class="texto-descriptivo"> : Expertise técnica cuando la complejidad supera lo ordinario.</span></p>
   </div>
 </section>
+ <!-- ======================= MÉTHODOLOGIE MOBILE ======================= -->
+<section id="metodologia-mobile" class="section-row mobile-version">
 
-<!-- ======================= METODOLOGÍA ======================= -->
+  <!-- BANDA AZUL -->
+  <div class="col-left col-left-section-title mobile-accordion">
+    <div class="accordion-title-mobile" data-target="metodologia-submenu">
+      Metodología
+    </div>
+
+    <div class="accordion-content-mobile" id="metodologia-submenu">
+      <a href="#" data-modal="flujo">Flujo de trabajo</a>
+      <a href="#" data-modal="formatos">Formatos aceptados</a>
+      <a href="#" data-modal="calidad">Compromiso calidad</a>
+    </div>
+  </div>
+
+  <!-- BANDA VERDE -->
+  <div class="col-right">
+    <p>Una metodología clara, colaborativa y sin estrés.</p>
+
+    <p><span class="enlace" data-modal="flujo">Flujo de trabajo</span> : Un proceso claro que garantiza resultados desde el primer día. </p>
+    <p><span class="enlace" data-modal="formatos">Formatos aceptados</span> : Trabajamos con lo que ya tienes.</p>
+    <p><span class="enlace" data-modal="calidad">Compromiso calidad</span> : Garantizamos coherencia y profesionalismo.</p>
+  </div>
+
+</section>
+
+<!-- ======================= MÉTHODOLOGIE ======================= -->
 <section id="metodologia" class="section-row">
   <div class="col-left col-left-section-title">
     <div class="section-label">METODOLOGÍA</div>
@@ -795,61 +944,84 @@ footer img {
 
   <div class="col-right">
     <p>Una metodología clara, colaborativa y sin estrés.</p>
-
-    <p><span class="enlace" data-modal="flujo">Nuestro flujo de trabajo</span><span class="texto-descriptivo">: Un proceso claro que garantiza resultados desde el primer día.</span></p>
-
-    <p><span class="enlace" data-modal="formatos">Formatos que aceptamos</span><span class="texto-descriptivo">: Trabajamos con lo que tienes.</span></p>
-
-    <p><span class="enlace" data-modal="calidad">Nuestro compromiso de calidad</span><span class="texto-descriptivo">: Garantizamos coherencia y profesionalismo en cada entrega.</span></p>
-  </div>
+    <p><span class="enlace" data-modal="flujo">Flujo de trabajo</span><span class="texto-descriptivo"> : Un proceso claro que garantiza resultados desde el primer día.</span></p>
+    <p><span class="enlace" data-modal="formatos">Formatos aceptados</span><span class="texto-descriptivo"> : Trabajamos con lo que ya tienes.</span></p>
+    <p><span class="enlace" data-modal="calidad">Compromiso calidad</span><span class="texto-descriptivo"> : Garantizamos coherencia y profesionalismo.</span></p>
 </section>
+<!-- ======================= TÉMOIGNAGES MOBILE TITLE ======================= -->
+<div class="mobile-version col-left col-left-section-title mobile-accordion">
+  <div class="accordion-title-mobile" data-modal="valoraciones">
+    VALORACIONES
+  </div>
+</div>
 
-<!-- ======================= VALORES ======================= -->
-<section id="valores" class="section-row">
-  <!-- Columna azul CON ACORDEÓN -->
-  <div class="col-left col-left-section-title mobile-accordion">
-    <div class="section-label accordion-title-mobile" data-modal="valores">VALORES</div>
+<!-- ======================= TÉMOIGNAGES ======================= -->
+<section id="temoignages" class="section-row">
+  <!-- Colonne bleue -->
+  <div class="col-left col-left-section-title">
+    <div class="section-label">VALORACIONES</div>
   </div>
 
-  <!-- Columna verde -->
-  <div class="col-right">
-    <p><span class="enlace" data-modal="valores">Cuando los plazos se acortan, la plantilla está saturada o necesitas expertise específico en BIM, entramos en acción.</span> No somos un proveedor más: somos tu estudio paralelo, especializado en la parte técnica que consume tus recursos más valiosos.</p>
-  </div>
-</section>
-
-<!-- ======================= TESTIMONIOS ======================= -->
-<section id="valoraciones" class="section-row">
-  <!-- Columna azul CON ACORDEÓN -->
-  <div class="col-left col-left-section-title mobile-accordion">
-    <div class="section-label accordion-title-mobile" data-modal="valoraciones">TESTIMONIOS</div>
-  </div>
-
-  <!-- Columna verde -->
+  <!-- Colonne verte -->
   <div class="col-right">
     <p>
-      <span class="enlace" data-modal="valoraciones">
-        La experiencia de quienes ya confían en nosotros.
-      </span>
+      <span class="enlace" data-modal="valoraciones">La experiencia de quienes ya confían en nosotros.</span>
     </p>
   </div>
 </section>
+<!-- ======================= VALEURS MOBILE TITLE ======================= -->
+<div class="mobile-version col-left col-left-section-title mobile-accordion">
+  <div class="accordion-title-mobile" data-modal="valores">
+  VALORES
+  </div>
+</div>
 
-<!-- ======================= CONTACTO ======================= -->
+<!-- ======================= VALEURS ======================= -->
+<section id="valores" class="section-row">
+  <!-- Colonne bleue -->
+  <div class="col-left col-left-section-title">
+    <div class="section-label">VALORES</div>
+  </div>
+
+  <!-- Colonne verte -->
+  <div class="col-right">
+
+    <!-- 🔵 ENLACE (1ª frase en azul, clicable, abre modal valores) -->
+    <p>
+      <span class="enlace" data-modal="valores">
+        Cuando los plazos se reducen, cuando el equipo está saturado o cuando necesitas una expertise BIM específica, intervenimos.
+      </span>
+    </p>
+
+    <!-- 🔹 TEXTO NORMAL (2ª frase, no clicable) -->
+    <p>
+      No somos un proveedor más: somos tu estudio paralelo, especializado en la parte técnica que consume tus recursos más preciosos.
+    </p>
+
+  </div>
+</section>
+<!-- ======================= CONTACT MOBILE TITLE ======================= -->
+<div class="mobile-version col-left col-left-section-title mobile-accordion">
+  <div class="accordion-title-mobile">
+    CONTACTO
+  </div>
+</div>
+<!-- ======================= CONTACT ======================= -->
 <section id="contacto" class="section-row">
-  <!-- Columna azul -->
+  <!-- Colonne bleue -->
   <div class="col-left col-left-section-title">
     <div class="section-label">CONTACTO</div>
   </div>
 
-  <!-- Columna verde -->
+  <!-- Colonne verte -->
   <div class="col-right">
     <p><strong>Hablemos de tu proyecto</strong></p>
     <p>¿Tienes un desafío arquitectónico o de ingeniería? Analizamos tu caso sin compromiso y te proponemos la solución más adecuada.</p>
-    <p>Ofrecemos una consultoría inicial gratuita para entender tus necesidades y definir juntos el mejor camino digital para tu proyecto.</p>
+    <p>Ofrecemos una consulta inicial gratuita para entender tus necesidades y definir juntos el mejor camino digital para tu proyecto.</p>
     <p><strong>Email</strong><br>
     <a href="mailto:bimespace@gmail.com" class="enlace">bimespace@gmail.com</a>
     </p>
-    <p><strong>Teléfono</strong><br>+41 78 331 81 14</p>
+    <p><strong>Téléphone</strong><br>+41 78 331 81 14</p>
     <p>
       <strong>WhatsApp</strong><br>
       <a class="enlace" href="https://wa.me/41783318114" target="_blank" rel="noopener">
@@ -862,7 +1034,7 @@ footer img {
 <!-- ======================= FOOTER LOGO ======================= -->
 <footer>
   <div class="logo-container">
-    <img src="images/logo.jpg" alt="Espace_BIM logo">
+  <img src="/images/logo.jpg" alt="Espace_BIM logo">
   </div>
 </footer>
 <!-- ======================= MODAL GLOBAL ======================= -->
@@ -879,7 +1051,7 @@ footer img {
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
-// ======================= CARRUSEL =======================
+// ======================= CARROUSEL =======================
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM cargado - inicializando componentes');
   
@@ -901,7 +1073,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Swiper inicializado');
   }
 
-  // ======================= SCROLL SUAVE =======================
+  // ======================= SCROLL DOUX =======================
   document.querySelectorAll('a.scrolly').forEach(a => {
     a.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -918,214 +1090,221 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ======================= MODAL CONTENIDO =======================
-  const modalData = {
-    refuerzo: {
-      titulo: 'Refuerzo de capacidad BIM',
-      texto: `
-        <p><strong>Más manos, mismos estándares.</strong></p>
-        <ul>
-          <li>Documentación ejecutiva urgente – planos de obra con máxima precisión.</li>
-          <li>Modelado masivo de promociones – viviendas, oficinas, complejos residenciales.</li>
-          <li>Concursos con fecha límite – entrega rápida sin comprometer calidad.</li>
-          <li>Proyectos bloqueados – retomamos y finalizamos trabajos paralizados.</li>
-          <li>Picos de carga de trabajo – soporte temporal para equipos saturados.</li>
-        </ul>
-      `,
-      image: 'images/Equipo3.png'
-    },
-    implementacion: {
-      titulo: 'Evolución digital / Implementación BIM',
-      texto: `
-        <p><strong>Del CAD al BIM sin fricciones.</strong></p>
-        <ul>
-          <li>Plantillas Revit personalizadas – adaptadas a tu forma de trabajar.</li>
-          <li>Estructura de parámetros inteligente – información coherente y aprovechable.</li>
-          <li>Librerías de familias específicas – elementos recurrentes organizados y optimizados.</li>
-          <li>Sistema de nomenclaturas claro – todo el equipo habla el mismo idioma técnico.</li>
-          <li>Flujos de exportación optimizados – IFC limpios, PDFs profesionales, coordinación fluida.</li>
-        </ul>
-      `,
-      image: 'images/Equipo4.png'
-    },
-    expertise: {
-      titulo: 'Servicios de alta especialización',
-      texto: `
-        <p><strong>Expertise técnico cuando el proyecto exige más.</strong></p>
-        <ul>
-          <li>Coordinación multidisciplinar BIM – arquitectura, estructura e instalaciones en sincronía.</li>
-          <li>Renders fotorrealistas e imágenes técnicas para concursos y clientes.</li>
-          <li>Modelado técnico complejo – instalaciones MEP, estructuras singulares, detalles constructivos.</li>
-          <li>AUTOCAD – modelado BIM a partir de planos CAD, planos técnicos en AutoCAD, digitalización de croquis.</li>
-          <li>Escaneo LIDAR terrestre y aéreo: captura de nubes de puntos de alta precisión para modelado de edificios existentes.</li>
-          <li>Fotogrametría con drones: levantamientos topográficos con precisión milimétrica en menos tiempo.</li>
-          <li>Análisis con IA: optimización de diseños mediante algoritmos de IA y automatización de procesos repetitivos.</li>
-        </ul>
-        <p>
-          Si quieres ver ejemplos de renders, puedes volver al carrusel de inicio:
-          <a href="#inicio" class="enlace scrolly">ver carrusel</a>.
-        </p>
-      `,
-      image: 'images/Equipo1.png'
-    },
-    flujo: {
-      titulo: 'Nuestro flujo de trabajo',
-      texto: `
-        <p><strong>Un proceso claro que garantiza resultados desde el primer día.</strong></p>
-        <p><strong>Fase 1: Análisis inicial.</strong></p>
-        <ul>
-          <li>Recibimos tus archivos (cualquier formato aceptado).</li>
-          <li>Realizamos diagnóstico técnico sin compromiso.</li>
-          <li>Definimos objetivos y alcance del proyecto.</li>
-        </ul>
-        <p><strong>Fase 2: Planificación colaborativa.</strong></p>
-        <ul>
-          <li>Propuesta detallada con cronograma.</li>
-          <li>Hitos de revisión conjunta.</li>
-          <li>Formatos de entrega específicos.</li>
-        </ul>
-        <p><strong>Fase 3: Desarrollo ágil.</strong></p>
-        <ul>
-          <li>Modelado progresivo con entregas parciales.</li>
-          <li>Sesiones de coordinación.</li>
-          <li>Ajustes en tiempo real según tus comentarios.</li>
-        </ul>
-        <p><strong>Fase 4: Control de calidad.</strong></p>
-        <ul>
-          <li>Verificación de estándares BIM/CAD.</li>
-          <li>Revisión de interferencias y coherencia.</li>
-          <li>Validación técnica completa.</li>
-        </ul>
-        <p><strong>Fase 5: Entrega final.</strong></p>
-        <ul>
-          <li>Documentación completa y organizada.</li>
-          <li>Formatos listos para uso inmediato.</li>
-          <li>Soporte post-entrega incluido.</li>
-        </ul>
-      `,
-      image: 'images/Equipo2.png'
-    },
-    formatos: {
-      titulo: 'Formatos que aceptamos',
-      texto: `
-        <p><strong>Trabajamos con lo que tengas.</strong></p>
-        <p><strong>Formatos generales:</strong></p>
-        <ul>
-          <li>PDF (planos, croquis, documentación).</li>
-          <li>Imágenes JPG/PNG (fotografías, referencias).</li>
-          <li>Documentos Word/Excel (especificaciones).</li>
-        </ul>
-        <p><strong>Formatos técnicos:</strong></p>
-        <ul>
-          <li>AutoCAD (DWG, DXF).</li>
-          <li>Revit (RVT).</li>
-          <li>SketchUp (SKP).</li>
-          <li>ArchiCAD (PLN).</li>
-          <li>IFC (modelos abiertos).</li>
-          <li>Nubes de puntos LIDAR (E57, PTS, LAS, RCP).</li>
-          <li>Datos de drones y fotogrametría.</li>
-        </ul>
-      `,
-      image: 'images/Equipo4.png'
-    },
-    calidad: {
-      titulo: 'Nuestro compromiso de calidad',
-      texto: `
-        <p><strong>Garantizamos coherencia y profesionalismo en cada entrega.</strong></p>
-        <p><strong>Nomenclatura inteligente:</strong></p>
-        <ul>
-          <li>Estructura de archivos clara y lógica.</li>
-          <li>Nombres descriptivos según estándares del sector.</li>
-          <li>Versiones organizadas y trazables.</li>
-        </ul>
-        <p><strong>Estándares profesionales:</strong></p>
-        <ul>
-          <li>Plantillas personalizadas para tu estudio.</li>
-          <li>Configuración de vistas predefinidas.</li>
-          <li>Gestión de capas optimizada.</li>
-          <li>Reglas de visibilidad coherentes.</li>
-        </ul>
-        <p><strong>Control exhaustivo:</strong></p>
-        <ul>
-          <li>Verificación de geometrías y topologías.</li>
-          <li>Validación de parámetros BIM.</li>
-          <li>Comprobación de interferencias.</li>
-        </ul>
-        <p><strong>Entregas listas para usar:</strong></p>
-        <ul>
-          <li>Paquetes completos y autónomos.</li>
-          <li>Documentación técnica clara.</li>
-          <li>Formatos compatibles con tu flujo de trabajo.</li>
-          <li>Asesoramiento en implementación.</li>
-        </ul>
-      `,
-      image: 'images/Equipo5.jpg'
-    },
-    valoraciones: {
-      titulo: 'Testimonios',
-      texto: `
-        <p>★★★★★<br><strong>Frank Steiner – Estudio de vivienda unifamiliar</strong><br>
-        Espace_BIM nos acompañó en el modelado integral del proyecto y el resultado superó nuestras expectativas.
-        Su dominio de Revit y la claridad de los entregables agilizó todo el proceso de diseño.
-        Son extremadamente receptivos y se adaptaron a cada cambio sin perder precisión.</p>
+  // ======================= MODAL CONTENU =======================
+ const modalData = {
+  refuerzo: {
+    titulo: 'Refuerzo de capacidad BIM',
+    texto: `
+      <p><strong>Más manos, mismos estándares.</strong></p>
+      <ul>
+        <li>Documentación ejecutiva urgente – planos de obra con precisión máxima.</li>
+        <li>Modelado masivo de promociones – viviendas, oficinas, conjuntos residenciales.</li>
+        <li>Concursos con fecha límite – entrega rápida sin comprometer la calidad.</li>
+        <li>Proyectos bloqueados – retomamos y finalizamos trabajos paralizados.</li>
+        <li>Picos de carga de trabajo – soporte temporal para equipos saturados.</li>
+      </ul>
+    `,
+    image: 'images/Equipo3.png'
+  },
+  
+  implementacion: {
+    titulo: 'Evolución digital / Implementación BIM',
+    texto: `
+      <p><strong>Del CAD al BIM sin fricción.</strong></p>
+      <ul>
+        <li>Modelos Revit personalizados – adaptados a tu forma de trabajar.</li>
+        <li>Estructura de parámetros inteligente – información coherente y explotable.</li>
+        <li>Bibliotecas de familias específicas – elementos recurrentes organizados y optimizados.</li>
+        <li>Sistema de nomenclatura claro – todo el equipo habla el mismo lenguaje técnico.</li>
+        <li>Flujos de exportación optimizados – IFC limpios, PDF profesionales, coordinación fluida.</li>
+      </ul>
+    `,
+    image: 'images/Equipo4.png'
+  },
+  
+  expertise: {
+    titulo: 'Servicios de alta especialización',
+    texto: `
+      <p><strong>Expertise técnica cuando el proyecto exige más.</strong></p>
+      <ul>
+        <li>Coordinación multidisciplinar BIM – arquitectura, estructura e instalaciones en sincronía.</li>
+        <li>Renders fotorrealistas e imágenes técnicas para concursos y clientes.</li>
+        <li>Modelado técnico complejo – instalaciones MEP, estructuras singulares, detalles constructivos.</li>
+        <li>AUTOCAD – modelado BIM a partir de planos CAD, planos técnicos en AutoCAD, digitalización de croquis.</li>
+        <li>Escaneo LIDAR terrestre y aéreo: captura de nubes de puntos alta precisión para modelado de edificios existentes.</li>
+        <li>Fotogrametría con drones: levantamientos topográficos con precisión milimétrica en menos tiempo.</li>
+        <li>Análisis con IA: optimización de diseños mediante algoritmos de IA y automatización de procesos repetitivos.</li>
+      </ul>
+      <p>
+        Si quieres ver ejemplos de renders, puedes volver al carrusel de inicio:
+        <a href="#inicio" class="enlace scrolly">ver carrusel</a>.
+      </p>
+    `,
+    image: 'images/Equipo1.png'
+  },
+  
+  flujo: {
+    titulo: 'Nuestro flujo de trabajo',
+    texto: `
+      <p><strong>Un proceso claro que garantiza resultados desde el primer día.</strong></p>
+      <p><strong>Fase 1: Análisis inicial.</strong></p>
+      <ul>
+        <li>Recibimos tus archivos (cualquier formato aceptado).</li>
+        <li>Realizamos un diagnóstico técnico sin compromiso.</li>
+        <li>Definimos objetivos y alcance del proyecto.</li>
+      </ul>
+      <p><strong>Fase 2: Planificación colaborativa.</strong></p>
+      <ul>
+        <li>Propuesta detallada con calendario.</li>
+        <li>Hitos de revisión conjunta.</li>
+        <li>Formatos de entrega específicos.</li>
+      </ul>
+      <p><strong>Fase 3: Desarrollo ágil.</strong></p>
+      <ul>
+        <li>Modelado progresivo con entregas parciales.</li>
+        <li>Sesiones de coordinación.</li>
+        <li>Ajustes en tiempo real según tus comentarios.</li>
+      </ul>
+      <p><strong>Fase 4: Control de calidad.</strong></p>
+      <ul>
+        <li>Verificación de estándares BIM/CAD.</li>
+        <li>Revisión de interferencias y coherencia.</li>
+        <li>Validación técnica completa.</li>
+      </ul>
+      <p><strong>Fase 5: Entrega final.</strong></p>
+      <ul>
+        <li>Documentación completa y organizada.</li>
+        <li>Formatos listos para uso inmediato.</li>
+        <li>Soporte post-entrega incluido.</li>
+      </ul>
+    `,
+    image: 'images/Equipo2.png'
+  },
+  
+  formatos: {
+    titulo: 'Formatos que aceptamos',
+    texto: `
+      <p><strong>Trabajamos con lo que ya tienes.</strong></p>
+      <p><strong>Formatos generales:</strong></p>
+      <ul>
+        <li>PDF (planos, croquis, documentación).</li>
+        <li>Imágenes JPG/PNG (fotografías, referencias).</li>
+        <li>Documentos Word/Excel (especificaciones).</li>
+      </ul>
+      <p><strong>Formatos técnicos:</strong></p>
+      <ul>
+        <li>AutoCAD (DWG, DXF).</li>
+        <li>Revit (RVT).</li>
+        <li>SketchUp (SKP).</li>
+        <li>ArchiCAD (PLN).</li>
+        <li>IFC (modelos abiertos).</li>
+        <li>Nubes de puntos LIDAR (E57, PTS, LAS, RCP).</li>
+        <li>Datos de drones y fotogrametría.</li>
+      </ul>
+    `,
+    image: 'images/Equipo4.png'
+  },
+  
+  calidad: {
+    titulo: 'Nuestro compromiso de calidad',
+    texto: `
+      <p><strong>Garantizamos coherencia y profesionalismo en cada entrega.</strong></p>
+      <p><strong>Nomenclatura inteligente:</strong></p>
+      <ul>
+        <li>Estructura de archivos clara y lógica.</li>
+        <li>Nombres descriptivos según estándares del sector.</li>
+        <li>Versiones organizadas y trazables.</li>
+      </ul>
+      <p><strong>Estándares profesionales:</strong></p>
+      <ul>
+        <li>Modelos personalizados para tu agencia.</li>
+        <li>Configuración de vistas predefinidas.</li>
+        <li>Gestión de capas optimizada.</li>
+        <li>Reglas de visibilidad coherentes.</li>
+      </ul>
+      <p><strong>Control exhaustivo:</strong></p>
+      <ul>
+        <li>Verificación de geometrías y topologías.</li>
+        <li>Validación de parámetros BIM.</li>
+        <li>Verificación de interferencias.</li>
+      </ul>
+      <p><strong>Entregas listas para usar:</strong></p>
+      <ul>
+        <li>Paquetes completos y autónomos.</li>
+        <li>Documentación técnica clara.</li>
+        <li>Formatos compatibles con tu flujo de trabajo.</li>
+        <li>Asesoramiento en implementación.</li>
+      </ul>
+    `,
+    image: 'images/Equipo5.jpg'
+  },
+  
+  valoraciones: {
+    titulo: 'Testimonios',
+    texto: `
+      <p>★★★★★<br><strong>Frank Steiner – Estudio de casa unifamiliar</strong><br>
+      Espace_BIM nos acompañó en el modelado integral del proyecto y el resultado superó nuestras expectativas.
+      Su dominio de Revit y la claridad de los entregables aceleraron todo el proceso de diseño.
+      Son extremadamente receptivos y se adaptaron a cada cambio sin perder precisión.</p>
 
-        <p>★★★★★<br><strong>Francisco Suárez – Proyecto de infraestructura</strong><br>
-        La coordinación BIM estuvo impecablemente gestionada. Destaco su capacidad para anticipar conflictos
-        entre disciplinas y proponer soluciones técnicas sólidas. Su soporte continuo nos permitió
-        mantener el ritmo del proyecto sin retrasos.</p>
+      <p>★★★★★<br><strong>Francisco Suárez – Proyecto de infraestructura</strong><br>
+      La coordinación BIM fue gestionada impecablemente. Destaco su capacidad para anticipar conflictos
+      entre disciplinas y proponer soluciones técnicas sólidas. Su soporte continuo nos permitió
+      mantener el ritmo del proyecto sin retrasos.</p>
 
-        <p>★★★★★<br><strong>Maria Borel – Documentación de un conjunto histórico</strong><br>
-        El trabajo de fotogrametría y análisis del patrimonio fue excepcional. El nivel de detalle del modelo 3D
-        y la fidelidad del registro superaron los estándares habituales del sector.</p>
+      <p>★★★★★<br><strong>Maria Borel – Documentación de un conjunto histórico</strong><br>
+      El trabajo de fotogrametría y análisis del patrimonio fue excepcional. El nivel de detalle del modelo 3D
+      y la fidelidad del levantamiento superaron los estándares habituales del sector.</p>
 
-        <p>★★★★★<br><strong>Christine Meyer – Renderización y presentaciones</strong><br>
-        Los renders ayudaron mucho a que el proyecto se entendiera y fuera aprobado sin problemas.
-        Supieron captar justo lo que queríamos y ajustaron los detalles con rapidez.</p>
+      <p>★★★★★<br><strong>Christine Meyer – Renders y presentaciones</strong><br>
+      Los renders ayudaron mucho a que el proyecto fuera comprendido y aprobado sin problemas.
+      Supieron capturar justo lo que queríamos y ajustar los detalles rápidamente.</p>
 
-        <p>★★★★★<br><strong>Peter Fischer – Implantación BIM</strong><br>
-        Nos ayudaron a implementar BIM de forma práctica y adaptada a cómo trabajamos realmente.
-        La formación fue clara, directa y sin complicaciones.</p>
+      <p>★★★★★<br><strong>Peter Fischer – Implementación BIM</strong><br>
+      Nos ayudaron a implementar BIM de forma práctica y adaptada a nuestra forma de trabajar realmente.
+      La formación fue clara, directa y sin complicaciones.</p>
 
-        <p>★★★★★<br><strong>Lucas Garcia – Instalaciones complejas</strong><br>
-        La coordinación entre CAD y BIM fue fluida y nos ahorró mucho tiempo. Se adelantaron a varios problemas
-        antes de que aparecieran en obra.</p>
+      <p>★★★★★<br><strong>Lucas Garcia – Instalaciones complejas</strong><br>
+      La coordinación entre CAD y BIM fue fluida y nos hizo ganar mucho tiempo. Anticiparon varios problemas
+      antes de que aparecieran en obra.</p>
 
-        <p>★★★★★<br><strong>Hans Meier – Edificio histórico</strong><br>
-        El modelo generado a partir del levantamiento fotogramétrico fue muy preciso. Gracias a eso pudimos
-        planificar todo con más seguridad.</p>
-      `,
-      image: 'images/Equipo1.png'
-    },
-    valores: {
-      titulo: 'Valores',
-      texto: `
-        <p><strong>Precisión – Cada detalle cuenta.</strong><br>
-        Aplicamos una metodología rigurosa que garantiza coherencia y fiabilidad en cada proyecto.</p>
+      <p>★★★★★<br><strong>Hans Meier – Edificio histórico</strong><br>
+      El modelo generado a partir del levantamiento fotogramétrico fue muy preciso. Gracias a ello pudimos
+      planificar todo con más seguridad.</p>
+    `,
+    image: 'images/Equipo1.png'
+  },
+  
+  valores: {
+    titulo: 'Valores',
+    texto: `
+      <p><strong>Precisión – Cada detalle cuenta.</strong><br>
+      Aplicamos una metodología rigurosa que garantiza coherencia y fiabilidad en cada proyecto.</p>
 
-        <p><strong>Innovación – Tecnología al servicio del proyecto.</strong><br>
-        Integramos las herramientas más avanzadas: BIM colaborativo, fotogrametría con drones para levantamientos precisos, 
-        y análisis con IA para optimización de diseños y detección automática de interferencias.</p>
+      <p><strong>Innovación – Tecnología al servicio del proyecto.</strong><br>
+      Integramos las herramientas más avanzadas: BIM colaborativo, fotogrametría con drones para levantamientos precisos, 
+      y análisis con IA para optimización de diseños y detección automática de interferencias.</p>
 
-        <p><strong>Sostenibilidad – Uso responsable de recursos.</strong><br>
-        Nuestros procesos BIM optimizan flujos de trabajo, reducen errores y favorecen una planificación
-        sostenible y un mantenimiento preventivo.</p>
+      <p><strong>Sostenibilidad – Uso responsable de recursos.</strong><br>
+      Nuestros procesos BIM optimizan los flujos de trabajo, reducen errores y favorecen una planificación
+      sostenible y un mantenimiento preventivo.</p>
 
-        <p><strong>Accesibilidad – La tecnología al alcance de todos.</strong><br>
-        Democratizamos el uso de entornos BIM y CAD para estudios de cualquier tamaño,
-        adaptándonos al nivel de experiencia de cada equipo.</p>
+      <p><strong>Accesibilidad – La tecnología al alcance de todos.</strong><br>
+      Democratizamos el uso de entornos BIM y CAD para estudios de cualquier tamaño,
+      adaptándonos al nivel de experiencia de cada equipo.</p>
 
-        <p><strong>Claridad – Información legible y ordenada.</strong><br>
-        Cada plano y modelo se entrega con nomenclaturas limpias y coherentes.</p>
+      <p><strong>Claridad – Información legible y ordenada.</strong><br>
+      Cada plano y modelo se entrega con nomenclaturas limpias y coherentes.</p>
 
-        <p><strong>Rigor – Detectamos interferencias antes de que lleguen a obra.</strong><br>
-        Anticipamos problemas de coordinación para evitar costes imprevistos.</p>
+      <p><strong>Rigor – Detectamos interferencias antes de que lleguen a obra.</strong><br>
+      Anticipamos problemas de coordinación para evitar costes imprevistos.</p>
 
-        <p><strong>Innovación técnica – BIM colaborativo e IFC.</strong><br>
-        Usamos exportación IFC y flujos colaborativos para máxima interoperabilidad.</p>
-      `,
-      image: 'images/Equipo2.png'
-    }
-  };
+      <p><strong>Innovación técnica – BIM colaborativo e IFC.</strong><br>
+      Utilizamos exportación IFC y flujos colaborativos para máxima interoperabilidad.</p>
+    `,
+    image: 'images/Equipo2.png'
+  }
+};
 
   const modal = document.getElementById('modal');
   const modalTexto = document.getElementById('modal-texto');
@@ -1191,7 +1370,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (window.innerWidth <= 960) {
         console.log('Click en acordeón móvil detectado');
         
-        // Si tiene data-target (submenú como SOLUCIONES, METODOLOGÍA)
+        // Si tiene data-target (submenú como SOLUTIONS, MÉTHODOLOGIE)
         if (this.hasAttribute('data-target')) {
           e.preventDefault();
           const target = this.getAttribute('data-target');
@@ -1214,7 +1393,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
           }
         }
-        // Si tiene data-modal (VALORES, TESTIMONIOS)
+        // Si tiene data-modal (VALEURS, TÉMOIGNAGES)
         else if (this.hasAttribute('data-modal')) {
           e.preventDefault();
           const modalType = this.getAttribute('data-modal');
@@ -1246,4 +1425,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log('Todos los componentes inicializados');
 });
+
+        
+        // Toggle current submenu
+        if (!isActive) {
+          parent.classList.add('active');
+        } else {
+          parent.classList.remove('active');
+        }
+      
+
+  // Event listeners for submenu items
+  document.querySelectorAll('.submenu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      if (window.innerWidth <= 960) {
+        // Close all submenus when clicking a submenu item
+        document.querySelectorAll('.has-submenu.active').forEach(item => {
+          item.classList.remove('active');
+        });
+        
+        // If it's a modal link, open the modal
+        if (this.getAttribute('data-modal')) {
+          e.preventDefault();
+          const key = this.getAttribute('data-modal');
+          openModal(key);
+        }
+      }
+    });
+  });
+  
+  // Close submenus when clicking outside on mobile
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 960) {
+      if (!e.target.closest('#main-nav')) {
+        document.querySelectorAll('.has-submenu.active').forEach(item => {
+          item.classList.remove('active');
+        });
+      }
+    }
+  });
+
+
 </script>
