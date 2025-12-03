@@ -32,13 +32,15 @@
         }
         
         .logo {
-            font-size: 3.5em;
-            font-weight: 800;
-            background: linear-gradient(90deg, #007acc, #00b4d8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 15px;
-        }
+             font-size: 3.5em;
+    font-weight: 800;
+    background: linear-gradient(90deg, #007acc, #00b4d8);
+    background-clip: text;              /* Añade esta línea */
+    -webkit-background-clip: text;      /* Mantén esta */
+    -webkit-text-fill-color: transparent; /* Mantén esta */
+    color: transparent;                 /* Añade esta línea */
+    margin-bottom: 15px;
+}
         
         .tagline {
             color: #666;
@@ -131,28 +133,28 @@
         
         <div class="language-grid">
             <!-- Français (Primary) -->
-            <a href="/fr/" class="lang-card primary">
+            <a href="fr/" class="lang-card primary">
                 <div class="flag">🇫🇷</div>
                 <div class="lang-name">Français</div>
                 <div class="lang-desc">Langue principale</div>
             </a>
             
             <!-- Español -->
-            <a href="/es/" class="lang-card">
+            <a href="es/" class="lang-card">
                 <div class="flag">🇪🇸</div>
                 <div class="lang-name">Español</div>
                 <div class="lang-desc">Sitio en español</div>
             </a>
             
             <!-- English -->
-            <a href="/en/" class="lang-card">
+            <a href="en/" class="lang-card">
                 <div class="flag">🇬🇧</div>
                 <div class="lang-name">English</div>
                 <div class="lang-desc">English website</div>
             </a>
             
             <!-- Deutsch -->
-            <a href="/de/" class="lang-card">
+            <a href="de/" class="lang-card">
                 <div class="flag">🇩🇪</div>
                 <div class="lang-name">Deutsch</div>
                 <div class="lang-desc">Deutsche Website</div>
@@ -180,7 +182,7 @@
             
             if (seconds <= 0) {
                 clearInterval(countdown);
-                window.location.href = "/fr/"; // Redirige à français
+                window.location.href = "fr/"; // Redirige à français
             }
         }, 1000);
     </script>
