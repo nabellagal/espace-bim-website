@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr">
 <head>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SHJRD6R57"></script>
@@ -11,7 +11,7 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Espace_BIM — DE</title>
+<title>Espace_BIM — FR</title>
 <!-- Meta Tags SEO -->
 <meta name="description" content="Espace_BIM - Your external BIM department. BIM modeling, 3D construction, digitization of architecture and engineering projects. Available when you need it.">
 <meta name="keywords" content="BIM, Revit, AutoCAD, 3D modeling, architecture, engineering, digitization, point clouds, photogrammetry">
@@ -404,7 +404,10 @@ footer img {
   height: 110px;
 }
 
-
+/* OCULTAR TODAS LAS VERSIONES MOBILE EN ORDENADOR */
+.mobile-version {
+  display: none !important;
+}
 @media (max-width: 960px) {
   /* 1. HEADER MOBILE VISIBLE Y PEQUEÑO */
   .mobile-header {
@@ -432,14 +435,14 @@ footer img {
   
   /* SOLUTIONS - Acordeón específico */
   #soluciones .col-left-section-title::before {
-    content: "SOLUTIONS";
+    content: "LÖSUNGEN";
     font-size: 1.6rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 15px;
   }
   
-  /* METHODIK - Acordeón específico */
+  /* MÉTHODOLOGIE - Acordeón específico */
   #metodologia .col-left-section-title::before {
     content: "METHODIK";
     font-size: 1.6rem;
@@ -458,7 +461,11 @@ footer img {
   }
   
     /* 3. OCULTAR SECCIONES ESCRITORIO EN MÓVIL */
-  #soluciones, #metodologia {
+ #Lösungen, 
+#methodik,
+#referenzen .col-left,
+#werte .col-left,
+#kontakt .col-left {
     display: none !important;
   }
 
@@ -573,23 +580,6 @@ footer img {
     width: 100%;
   }
   
-   /* 11. OCULTAR SECCIONES AZULES EXCEPTO ACORDEONES */
-  .col-left-section-title:not(.mobile-accordion) {
-    display: none !important;
-  }
-  
-  .mobile-accordion {
-    display: flex !important;
-    position: relative;
-    padding-bottom: 20px !important;
-    align-items: flex-start !important;
-  }
-  
-  .accordion-title-mobile {
-    cursor: pointer;
-    width: 100%;
-  }
-  
   /* 11. IDIOMAS ALINEADO IZQUIERDA */
   #idiomas {
     text-align: left;
@@ -600,54 +590,57 @@ footer img {
 /*  ACORDEÓN EN SECCIONES EXISTENTES - MOBILE */
 /* ============================ */
 @media (max-width: 960px) {
+
+  /* Banda azul unificada */
   .mobile-accordion {
-    position: relative;
-    padding-bottom: 20px !important;
+    width: 100% !important;
+    background: #006E91 !important;
+    padding: 20px 25px !important;  
+    margin: 0;
+    box-sizing: border-box;
   }
-  
+
+  /* Títulos grandes alineados a la derecha */
   .accordion-title-mobile {
-    cursor: pointer;
-    padding: 15px 0;
+    font-size: 1.5rem !important;        /* mucho más grande */
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-align: right !important;      /* alineación a la derecha */
+    padding-right: 40px !important;    /* espacio para la flecha */
     position: relative;
   }
-  
-  .accordion-title-mobile:after {
+
+  /* Flecha bien colocada */
+  .accordion-title-mobile::after {
     content: '▼';
-    font-size: 0.8rem;
-    margin-left: 10px;
-    transition: transform 0.3s ease;
+    font-size: 1.3rem !important;      /* flecha más grande */
+    position: absolute;
+    right: 0;                          /* flecha al borde */
+    top: 50%;                          /* centrada */
+    transform: translateY(-50%);
+    transition: transform 0.25s ease;
   }
-  
-  .accordion-title-mobile.active:after {
-    transform: rotate(180deg);
+
+  /* Flecha al abrir */
+  .accordion-title-mobile.active::after {
+    transform: translateY(-50%) rotate(180deg);
   }
-  
- .accordion-content-mobile {
-  display: none;
-  background: transparent !important;  /* ← FONDO TRANSPARENTE */
-  margin-top: 10px !important;
-  padding: 0 !important;               /* ← SIN PADDING */
-  border-radius: 0 !important;         /* ← SIN BORDES REDONDEADOS */
-  text-align: left !important;
-}
-  
- .accordion-content-mobile a {
-  display: block;
-  color: #ffffff !important;  /* ← MANTENER BLANCO */
-  padding: 8px 0;             /* ← REDUCIR PADDING */
-  text-decoration: none;
-  border-bottom: none !important;  /* ← ELIMINAR LÍNEA */
-  font-weight: 400 !important;
-}
-  
-  .accordion-content-mobile a:last-child {
-    border-bottom: none;
+
+  /* Submenú transparente */
+  .accordion-content-mobile {
+    display: none;
+    padding-top: 12px;
+    background: transparent;
   }
-  
-  .accordion-content-mobile a:hover {
-    color: #28f4ad !important;
+
+  .accordion-content-mobile a {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    text-decoration: none;
   }
 }
+
 /* ============================ */
 /*  RESPONSIVE PANTALLAS MEDIANAS (16") */
 /* ============================ */
@@ -801,36 +794,36 @@ footer img {
 
     <!-- ======================= HEADER MOBILE ======================= -->
     <div class="mobile-header">
-        <img src="images/logo.jpg" alt="Espace_BIM logo">
+     <img src="/images/logo.jpg" alt="Espace_BIM logo">
     </div>
 
 
 <!-- ======================= MENU SUPERIEUR DESKTOP ======================= -->
 <nav id="main-nav">
   <ul>
-    <li><a href="#inicio" class="scrolly">Startseite</a></li>
+    <li><a href="#inicio" class="scrolly">Start</a></li>
     
     <li class="has-submenu">
       <a href="#soluciones" class="scrolly">Lösungen</a>
       <ul class="submenu">
-        <li><a href="#" data-modal="refuerzo">BIM-Kapazitätsverstärkung</a></li>
-        <li><a href="#" data-modal="implementacion">Digitale Entwicklung / BIM-Implementierung</a></li>
-        <li><a href="#" data-modal="expertise">Hochspezialisierte Leistungen</a></li>
+        <li><a href="#" data-modal="refuerzo">BIM-Verstärkung</a></li>
+        <li><a href="#" data-modal="implementacion">Implementierung</a></li>
+        <li><a href="#" data-modal="expertise">Fachexpertise</a></li>
       </ul>
     </li>
     
     <li class="has-submenu">
       <a href="#metodologia" class="scrolly">Methodik</a>
       <ul class="submenu">
-        <li><a href="#" data-modal="flujo">Unser Arbeitsablauf</a></li>
+        <li><a href="#" data-modal="flujo">Workflow</a></li>
         <li><a href="#" data-modal="formatos">Akzeptierte Formate</a></li>
-        <li><a href="#" data-modal="calidad">Unser Qualitätsversprechen</a></li>
+        <li><a href="#" data-modal="calidad">Qualitätsengagement</a></li>
       </ul>
     </li>
     
     <li><a href="#" data-modal="valoraciones">Referenzen</a></li>
     <li><a href="#" data-modal="valores">Werte</a></li>
-    <li><a href="#contacto" class="scrolly">Kontakt</a></li>
+    <li><a href="#kontakt" class="scrolly">Kontakt</a></li>
   </ul>
 </nav>
 
@@ -841,17 +834,17 @@ footer img {
   <!-- Colonne bleue -->
   <div class="col-left col-left-inicio">
     <h1>ESPACE_BIM</h1>
-    <h2>Votre département BIM externe, disponible quand vous en avez besoin.</h2>
+    <h2>Ihre externe BIM-Abteilung, verfügbar wenn Sie sie brauchen.</h2>
     <p>
-      Reprenez le contrôle de vos délais avec notre équipe spécialisée en modélisation et documentation technique.
-      Nous prenons vos projets à n'importe quel stade et les livrons prêts à l'emploi, avec la rigueur qu'exige la profession.
+       Übernehmen Sie die Kontrolle über Ihre Fristen mit unserem auf Modellierung und technische Dokumentation spezialisierten Team.
+  Wir übernehmen Ihre Projekte in jeder Phase und liefern sie einsatzbereit, mit der Strenge, die der Beruf erfordert.
     </p>
-  <div id="idiomas">
+ <div id="idiomas">
   <strong>Sprache:</strong>
-  <a href="index.html">FR</a> |
-  <a href="index-es.html">ES</a> |
-  <a href="index-en.html">EN</a> |
-  <a href="index-de.html"><strong>DE</strong></a>
+  <a href="/fr/">FR</a> |
+  <a href="/es/">ES</a> |
+  <a href="/en/">EN</a> |
+  <a href="/">DE</a>
 </div>
   </div>
 
@@ -859,117 +852,162 @@ footer img {
   <div class="col-right">
     <div id="carrusel" class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/Foto1.png" alt="Projet 1"></div>
-        <div class="swiper-slide"><img src="images/Foto2.png" alt="Projet 2"></div>
-        <div class="swiper-slide"><img src="images/Foto3.png" alt="Projet 3"></div>
-        <div class="swiper-slide"><img src="images/Foto4.png" alt="Projet 4"></div>
-        <div class="swiper-slide"><img src="images/Foto5.png" alt="Projet 5"></div>
-        <div class="swiper-slide"><img src="images/Foto6.png" alt="Projet 6"></div>
-        <div class="swiper-slide"><img src="images/Foto7.png" alt="Projet 7"></div>
-        <div class="swiper-slide"><img src="images/Foto8.png" alt="Projet 8"></div>
+<div class="swiper-slide"><img src="../images/Foto1.png" alt="Projet 1"></div>
+<div class="swiper-slide"><img src="../images/Foto2.png" alt="Projet 2"></div>
+<div class="swiper-slide"><img src="../images/Foto3.png" alt="Projet 3"></div>
+<div class="swiper-slide"><img src="../images/Foto4.png" alt="Projet 4"></div>
+<div class="swiper-slide"><img src="../images/Foto5.png" alt="Projet 5"></div>
+<div class="swiper-slide"><img src="../images/Foto6.png" alt="Projet 6"></div>
+<div class="swiper-slide"><img src="../images/Foto7.png" alt="Projet 7"></div>
+<div class="swiper-slide"><img src="../images/Foto8.png" alt="Projet 8"></div>
       </div>
       <!-- Grandes flèches -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
   </div>
+</section> 
+<!-- ======================= SOLUTIONS MOBILE ======================= -->
+<section id="soluciones-mobile" class="section-row mobile-version">
+  
+  <!-- BANDA AZUL: acordeón -->
+  <div class="col-left col-left-section-title mobile-accordion">
+    <div class="accordion-title-mobile" data-target="soluciones-submenu">
+       LÖSUNGEN
+    </div>
+
+    <div class="accordion-content-mobile" id="soluciones-submenu">
+      <a href="#" data-modal="refuerzo">Renfort BIM</a>
+      <a href="#" data-modal="implementacion">Implémentation</a>
+      <a href="#" data-modal="expertise">Expertise</a>
+    </div>
+  </div>
+
+  <!-- BANDA VERDE: texto verde -->
+ <div class="col-right">
+  <p>Wenn Ihr Team überlastet ist, bringen wir zusätzliche Kapazität. Wenn ein Wettbewerb visuelle Wirkung erfordert, erstellen wir Renderings und virtuelle Besichtigungen. Wenn Sie Ausführungsdokumentation benötigen, liefern wir baufertige Pläne.</p>
+
+  <p><span class="enlace" data-modal="refuerzo">BIM-Kapazitätsverstärkung</span><span class="texto-descriptivo"> : Mehr Hände, gleiche Standards.</span></p>
+  <p><span class="enlace" data-modal="implementacion">Digitale Entwicklung / BIM-Implementierung</span><span class="texto-descriptivo"> : Von CAD zu BIM reibungslos.</span></p>
+  <p><span class="enlace" data-modal="expertise">Hochspezialisierte Dienstleistungen</span><span class="texto-descriptivo"> : Technische Expertise, wenn die Komplexität das Übliche übersteigt.</span></p>
+</div>
 </section>
+
 <!-- ======================= SOLUTIONS ======================= -->
 <section id="soluciones" class="section-row">
   <!-- Colonne bleue -->
   <div class="col-left col-left-section-title">
-    <div class="section-label">LÖSUNGEN</div>
+    <div class="section-label"> LÖSUNGEN</div>
   </div>
 
   <!-- Colonne verde (se mantiene igual) -->
-  <div class="col-right">
-    <p>Wenn Ihr Team überlastet ist, stellen wir zusätzliche Kapazitäten bereit. Wenn ein Wettbewerb visuelle Wirkung benötigt, erstellen wir Renderings und virtuelle Rundgänge. Wenn Sie Ausführungsunterlagen benötigen, liefern wir baureife Pläne.</p>
-    
-    <p><span class="enlace" data-modal="refuerzo">BIM-Kapazitätsverstärkung</span><span class="texto-descriptivo"> : Mehr Hände, gleiche Standards.</span></p>
-    <p><span class="enlace" data-modal="implementacion">Digitale Entwicklung / BIM-Implementierung</span><span class="texto-descriptivo"> : Nahtloser Übergang von CAD zu BIM.</span></p>
-    <p><span class="enlace" data-modal="expertise">Hochspezialisierte Leistungen</span><span class="texto-descriptivo"> : Technische Expertise, wenn die Komplexität das Übliche übersteigt.</span></p>
-  </div>
-</section>
- 
-<!-- ======================= METHODIK ======================= -->
-<section id="metodologia" class="section-row">
-<!-- Colonne bleue -->
-<div class="col-left col-left-section-title">
-  <div class="section-label">METHODIK</div>
+ <div class="col-right">
+  <p>Wenn Ihr Team überlastet ist, bringen wir zusätzliche Kapazität. Wenn ein Wettbewerb visuelle Wirkung erfordert, erstellen wir Renderings und virtuelle Besichtigungen. Wenn Sie Ausführungsdokumentation benötigen, liefern wir baufertige Pläne.</p>
+
+  <p><span class="enlace" data-modal="refuerzo">BIM-Kapazitätsverstärkung</span><span class="texto-descriptivo"> : Mehr Hände, gleiche Standards.</span></p>
+  <p><span class="enlace" data-modal="implementacion">Digitale Entwicklung / BIM-Implementierung</span><span class="texto-descriptivo"> : Von CAD zu BIM reibungslos.</span></p>
+  <p><span class="enlace" data-modal="expertise">Hochspezialisierte Dienstleistungen</span><span class="texto-descriptivo"> : Technische Expertise, wenn die Komplexität das Übliche übersteigt.</span></p>
 </div>
-  <!-- Colonne verde (se mantiene igual) -->
-  <div class="col-right">
-    <p>Eine klare, kollaborative und stressfreie Methodik.</p>
-    <p><span class="enlace" data-modal="flujo">Unser Arbeitsablauf</span><span class="texto-descriptivo"> : Ein klarer Prozess, der vom ersten Tag an Ergebnisse garantiert.</span></p>
-    <p><span class="enlace" data-modal="formatos">Akzeptierte Formate</span><span class="texto-descriptivo"> : Wir arbeiten mit dem, was Sie bereits haben.</span></p>
-    <p><span class="enlace" data-modal="calidad">Unser Qualitätsversprechen</span><span class="texto-descriptivo"> : Wir gewährleisten Konsistenz und Professionalität bei jeder Lieferung.</span></p>
-  </div>
 </section>
- <!-- ======================= SOLUTIONS MOBILE ======================= -->
-<section id="soluciones-mobile" class="section-row mobile-version">
-  <!-- ZONA AZUL MOBILE - ACORDEÓN -->
-  <div class="col-left col-left-section-title mobile-accordion">
-    <div class="accordion-title-mobile" data-target="soluciones-submenu">
-      LÖSUNGEN
-    </div>
-    <div class="accordion-content-mobile" id="soluciones-submenu">
-      <a href="#" data-modal="refuerzo">BIM-Kapazitätsverstärkung</a>
-      <a href="#" data-modal="implementacion">Digitale Entwicklung / BIM-Implementierung</a>
-      <a href="#" data-modal="expertise">Hochspezialisierte Leistungen</a>
-    </div>
-  </div>
-
-  <!-- ZONA VERDE - TEXTO DESCRIPTIVO -->
-  <div class="col-right">
-    <p>Lorsque votre équipe est débordée, nous apportons de la capacité supplémentaire. Lorsqu'un concours nécessite de l'impact visuel, nous créamos des rendus et des visites virtuelles. Lorsque vous avez besoin de documentation d'exécution, nous livrons des plans prêts pour la construction.</p>
-  </div>
-</section>
-
-<!-- ======================= METHODIK MOBILE ======================= -->
+ <!-- ======================= MÉTHODOLOGIE MOBILE ======================= -->
 <section id="metodologia-mobile" class="section-row mobile-version">
-  <!-- ZONA AZUL MOBILE - ACORDEÓN -->
+
+  <!-- BANDA AZUL -->
   <div class="col-left col-left-section-title mobile-accordion">
     <div class="accordion-title-mobile" data-target="metodologia-submenu">
       METHODIK
     </div>
+
     <div class="accordion-content-mobile" id="metodologia-submenu">
-      <a href="#" data-modal="flujo">Unser Arbeitsablauf</a>
+      <a href="#" data-modal="flujo">Workflow</a>
       <a href="#" data-modal="formatos">Akzeptierte Formate</a>
-      <a href="#" data-modal="calidad">Unser Qualitätsversprechen</a>
+      <a href="#" data-modal="calidad">Qualitätsengagement</a>
     </div>
   </div>
 
-  <!-- ZONA VERDE - TEXTO DESCRIPTIVO -->
-  <div class="col-right">
-    <p>Eine klare, kollaborative und stressfreie Methodik.</p>
-  </div>
+  <!-- BANDA VERDE -->
+<div class="col-right">
+  <p>Eine klare, kollaborative und stressfreie Methodik.</p>
+  <p><span class="enlace" data-modal="flujo">Workflow</span><span class="texto-descriptivo"> : Ein klarer Prozess, der ab dem ersten Tag Ergebnisse garantiert.</span></p>
+  <p><span class="enlace" data-modal="formatos">Akzeptierte Formate</span><span class="texto-descriptivo"> : Wir arbeiten mit dem, was Sie bereits haben.</span></p>
+  <p><span class="enlace" data-modal="calidad">Qualitätsengagement</span><span class="texto-descriptivo"> : Wir garantieren Konsistenz und Professionalität.</span></p>
+</div>
+
 </section>
 
-<!-- ======================= REFERENZEN MOBILE ======================= -->
-<section class="section-row mobile-version">
-  <div class="col-left col-left-section-title mobile-accordion">
-    <div class="accordion-title-mobile" data-modal="valoraciones">
-      REFERENZEN
-    </div>
+<!-- ======================= MÉTHODOLOGIE ======================= -->
+<section id="metodologia" class="section-row">
+  <div class="col-left col-left-section-title">
+    <div class="section-label">METHODIK</div>
   </div>
-  <div class="col-right">
-    <p>Die Erfahrung unserer zufriedenen Kunden.</p>
-  </div>
-</section>
 
-<!-- ======================= WERTE MOBILE ======================= -->
-<section class="section-row mobile-version">
-  <div class="col-left col-left-section-title mobile-accordion">
-    <div class="accordion-title-mobile" data-modal="valores">
-      WERTE
-    </div>
-  </div>
   <div class="col-right">
-    <p>Unsere Werte und Arbeitsgrundsätze.</p>
+  <p>Eine klare, kollaborative und stressfreie Methodik.</p>
+  <p><span class="enlace" data-modal="flujo">Workflow</span><span class="texto-descriptivo"> : Ein klarer Prozess, der ab dem ersten Tag Ergebnisse garantiert.</span></p>
+  <p><span class="enlace" data-modal="formatos">Akzeptierte Formate</span><span class="texto-descriptivo"> : Wir arbeiten mit dem, was Sie bereits haben.</span></p>
+  <p><span class="enlace" data-modal="calidad">Qualitätsengagement</span><span class="texto-descriptivo"> : Wir garantieren Konsistenz und Professionalität.</span></p>
+</div>
+</section>
+<!-- ======================= TÉMOIGNAGES MOBILE TITLE ======================= -->
+<div class="mobile-version col-left col-left-section-title mobile-accordion">
+  <div class="accordion-title-mobile" data-modal="valoraciones">
+    REFERENZEN
+  </div>
+</div>
+
+<!-- ======================= TÉMOIGNAGES ======================= -->
+<section id="temoignages" class="section-row">
+  <!-- Colonne bleue -->
+  <div class="col-left col-left-section-title">
+    <div class="section-label">REFERENZEN</div>
+  </div>
+
+  <!-- Colonne verte -->
+  <div class="col-right">
+    <p>
+      <span class="enlace" data-modal="valoraciones">L’expérience de ceux qui nous font déjà confiance.</span>
+    </p>
   </div>
 </section>
+<!-- ======================= VALEURS MOBILE TITLE ======================= -->
+<div class="mobile-version col-left col-left-section-title mobile-accordion">
+  <div class="accordion-title-mobile" data-modal="valores">
+    WERTE
+  </div>
+</div>
+
+<!-- ======================= VALEURS ======================= -->
+<section id="WERTE" class="section-row">
+  <!-- Colonne bleue -->
+  <div class="col-left col-left-section-title">
+    <div class="section-label">WERTE</div>
+  </div>
+
+  <!-- Colonne verte -->
+  <div class="col-right">
+
+    <!-- 🔵 ENLACE (1ª frase en azul, clicable, abre modal valores) -->
+    <p>
+      <span class="enlace" data-modal="valores">
+       Wenn sich die Fristen verkürzen, das Team überlastet ist oder Sie spezifische BIM-Expertise benötigen, greifen wir ein.
+      </span>
+    </p>
+
+    <!-- 🔹 TEXTO NORMAL (2ª frase, no clicable) -->
+    <p>
+      Wir sind nicht nur ein weiterer Dienstleister: Wir sind Ihr paralleles Studio, spezialisiert auf den technischen Teil, der Ihre wertvollsten Ressourcen verbraucht.
+    </p>
+
+  </div>
+</section>
+<!-- ======================= CONTACT MOBILE TITLE ======================= -->
+<div class="mobile-version col-left col-left-section-title mobile-accordion">
+  <div class="accordion-title-mobile">
+    kontakt
+  </div>
+</div>
 <!-- ======================= CONTACT ======================= -->
-<section id="contacto" class="section-row">
+<section id="kontakt" class="section-row">
   <!-- Colonne bleue -->
   <div class="col-left col-left-section-title">
     <div class="section-label">KONTAKT</div>
@@ -979,8 +1017,8 @@ footer img {
   <div class="col-right">
     <p><strong>Sprechen wir über Ihr Projekt</strong></p>
     <p>Haben Sie eine architektonische oder ingenieurtechnische Herausforderung? Wir analysieren Ihren Fall unverbindlich und schlagen Ihnen die passendste Lösung vor.</p>
-    <p>Wir bieten eine kostenlose Erstberatung an, um Ihre Bedürfnisse zu verstehen und gemeinsam den besten digitalen Weg für Ihr Projekt zu definieren.</p>
-    <p><strong>Email</strong><br>
+    <p>Wir bieten eine kostenlose Erstberatung, um Ihre Bedürfnisse zu verstehen und gemeinsam den besten digitalen Weg für Ihr Projekt zu definieren.</p>
+    <p><strong>E-mail</strong><br>
     <a href="mailto:bimespace@gmail.com" class="enlace">bimespace@gmail.com</a>
     </p>
     <p><strong>Telefon</strong><br>+41 78 331 81 14</p>
@@ -996,7 +1034,7 @@ footer img {
 <!-- ======================= FOOTER LOGO ======================= -->
 <footer>
   <div class="logo-container">
-    <img src="images/logo.jpg" alt="Espace_BIM logo">
+  <img src="/images/logo.jpg" alt="Espace_BIM logo">
   </div>
 </footer>
 <!-- ======================= MODAL GLOBAL ======================= -->
@@ -1053,213 +1091,220 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // ======================= MODAL CONTENU =======================
-  const modalData = {
-    refuerzo: {
-      titulo: 'Renfort de capacité BIM',
-      texto: `
-        <p><strong>Plus de mains, mêmes standards.</strong></p>
-        <ul>
-          <li>Documentation exécutive urgente – plans de chantier avec précision maximale.</li>
-          <li>Modélisation massive de promotions – logements, bureaux, ensembles résidentiels.</li>
-          <li>Concours avec date limite – livraison rapide sans compromettre la qualité.</li>
-          <li>Projets bloqués – nous reprenons et finalisons les travaux paralysés.</li>
-          <li>Pics de charge de travail – support temporaire pour équipes saturées.</li>
-        </ul>
-      `,
-      image: 'images/Equipo3.png'
-    },
-    implementacion: {
-      titulo: 'Évolution digitale / Implémentation BIM',
-      texto: `
-        <p><strong>Du CAD au BIM sans friction.</strong></p>
-        <ul>
-          <li>Modèles Revit personnalisés – adaptés à votre façon de travailler.</li>
-          <li>Structure de paramètres intelligente – information cohérente et exploitable.</li>
-          <li>Bibliothèques de familles spécifiques – éléments récurrents organisés et optimisés.</li>
-          <li>Système de nomenclature clair – toute l'équipe parle le même langage technique.</li>
-          <li>Flux d'exportation optimisés – IFC propres, PDF professionnels, coordination fluide.</li>
-        </ul>
-      `,
-      image: 'images/Equipo4.png'
-    },
-    expertise: {
-      titulo: 'Services de haute spécialisation',
-      texto: `
-        <p><strong>Expertise technique quand le projet exige plus.</strong></p>
-        <ul>
-          <li>Coordination multidisciplinaire BIM – architecture, structure et installations en synchronie.</li>
-          <li>Rendus photoréalistes et images techniques pour concours et clients.</li>
-          <li>Modélisation technique complexe – installations MEP, structures singulières, détails constructifs.</li>
-          <li>AUTOCAD – modélisation BIM à partir de plans CAD, planes techniques en AutoCAD, digitalisation de croquis.</li>
-          <li>Scan LIDAR terrestre et aérien : capture de nuages de points haute précision pour modélisation de bâtiments existants.</li>
-          <li>Photogrammétrie par drones : levés topographiques avec précision millimétrique en moins de temps.</li>
-          <li>Analyse avec IA : optimisation de designs par algorithmes d'IA et automatisation de processus répétitifs.</li>
-        </ul>
-        <p>
-          Si vous voulez voir des exemples de rendus, vous pouvez retourner au carrousel d'accueil :
-          <a href="#inicio" class="enlace scrolly">voir carrousel</a>.
-        </p>
-      `,
-      image: 'images/Equipo1.png'
-    },
-    flujo: {
-      titulo: 'Notre flux de travail',
-      texto: `
-        <p><strong>Un processus clair qui garantit des résultats dès le premier jour.</strong></p>
-        <p><strong>Phase 1 : Analyse initiale.</strong></p>
-        <ul>
-          <li>Nous recevons vos fichiers (tout format accepté).</li>
-          <li>Nous réalisons un diagnostic technique sans engagement.</li>
-          <li>Nous définissons objectifs et périmètre du projet.</li>
-        </ul>
-        <p><strong>Phase 2 : Planification collaborative.</strong></p>
-        <ul>
-          <li>Proposition détaillée avec calendrier.</li>
-          <li>Jalons de revue conjointe.</li>
-          <li>Formats de livraison spécifiques.</li>
-        </ul>
-        <p><strong>Phase 3 : Développement agile.</strong></p>
-        <ul>
-          <li>Modélisation progressive avec livraisons partielles.</li>
-          <li>Sessions de coordination.</li>
-          <li>Ajustements en temps réel selon vos commentaires.</li>
-        </ul>
-        <p><strong>Phase 4 : Contrôle qualité.</strong></p>
-        <ul>
-          <li>Vérification des standards BIM/CAD.</li>
-          <li>Revue des interférences et cohérence.</li>
-          <li>Validation technique complète.</li>
-        </ul>
-        <p><strong>Phase 5 : Livraison finale.</strong></p>
-        <ul>
-          <li>Documentation complète et organisée.</li>
-          <li>Formats prêts pour usage immédiat.</li>
-          <li>Support post-livraison inclus.</li>
-        </ul>
-      `,
-      image: 'images/Equipo2.png'
-    },
-    formatos: {
-      titulo: 'Formats que nous acceptons',
-      texto: `
-        <p><strong>Nous travaillons avec ce que vous avez.</strong></p>
-        <p><strong>Formats généraux:</strong></p>
-        <ul>
-          <li>PDF (plans, croquis, documentation).</li>
-          <li>Images JPG/PNG (photographies, références).</li>
-          <li>Documents Word/Excel (spécifications).</li>
-        </ul>
-        <p><strong>Formats techniques:</strong></p>
-        <ul>
-          <li>AutoCAD (DWG, DXF).</li>
-          <li>Revit (RVT).</li>
-          <li>SketchUp (SKP).</li>
-          <li>ArchiCAD (PLN).</li>
-          <li>IFC (modèles ouverts).</li>
-          <li>Nuages de points LIDAR (E57, PTS, LAS, RCP).</li>
-          <li>Données de drones et photogrammétrie.</li>
-        </ul>
-      `,
-      image: 'images/Equipo4.png'
-    },
-    calidad: {
-      titulo: 'Notre engagement qualité',
-      texto: `
-        <p><strong>Nous garantissons cohérence et professionnalisme dans chaque livraison.</strong></p>
-        <p><strong>Nomenclature intelligente:</strong></p>
-        <ul>
-          <li>Structure de fichiers claire et logique.</li>
-          <li>Noms descriptifs selon standards du secteur.</li>
-          <li>Versions organisées et traçables.</li>
-        </ul>
-        <p><strong>Standards professionnels:</strong></p>
-        <ul>
-          <li>Modèles personnalisés pour votre agence.</li>
-          <li>Configuration de vues prédéfinies.</li>
-          <li>Gestion des calques optimisée.</li>
-          <li>Règles de visibilité cohérentes.</li>
-        </ul>
-        <p><strong>Contrôle exhaustif:</strong></p>
-        <ul>
-          <li>Vérification des géométries et topologies.</li>
-          <li>Validation des paramètres BIM.</li>
-          <li>Vérification des interférences.</li>
-        </ul>
-        <p><strong>Livraisons prêtes à l'emploi:</strong></p>
-        <ul>
-          <li>Packages complets et autonomes.</li>
-          <li>Documentation technique claire.</li>
-          <li>Formats compatibles avec votre flux de travail.</li>
-          <li>Conseil en implémentation.</li>
-        </ul>
-      `,
-      image: 'images/Equipo5.jpg'
-    },
-    valoraciones: {
-      titulo: 'Referenzen',
-      texto: `
-        <p>★★★★★<br><strong>Frank Steiner – Étude de maison unifamiliale</strong><br>
-        Espace_BIM nous a accompagnés dans la modélisation intégrale du projet et le résultat a dépassé nos attentes.
-        Leur maîtrise de Revit et la clarté des livrables ont accéléré tout le processus de design.
-        Ils sont extrêmement réceptifs et se sont adaptés à chaque changement sans perdre en précision.</p>
+const modalData = {
+  refuerzo: {
+    titulo: 'BIM-Kapazitätsverstärkung',
+    texto: `
+      <p><strong>Mehr Hände, gleiche Standards.</strong></p>
+      <ul>
+        <li>Dringende Ausführungsdokumentation – Baustellenpläne mit maximaler Präzision.</li>
+        <li>Massive Modellierung von Wohnanlagen – Wohnungen, Büros, Wohnkomplexe.</li>
+        <li>Wettbewerbe mit Abgabefrist – schnelle Lieferung ohne Qualitätseinbußen.</li>
+        <li>Blockierte Projekte – wir nehmen gelähmte Arbeiten wieder auf und beenden sie.</li>
+        <li>Arbeitslastspitzen – temporäre Unterstützung für überlastete Teams.</li>
+      </ul>
+    `,
+    image: 'images/Equipo3.png'
+  },
+  
+  implementacion: {
+    titulo: 'Digitale Entwicklung / BIM-Implementierung',
+    texto: `
+      <p><strong>Von CAD zu BIM reibungslos.</strong></p>
+      <ul>
+        <li>Maßgeschneiderte Revit-Modelle – an Ihre Arbeitsweise angepasst.</li>
+        <li>Intelligente Parameterstruktur – konsistente und nutzbare Informationen.</li>
+        <li>Spezifische Familienbibliotheken – wiederkehrende Elemente organisiert und optimiert.</li>
+        <li>Klares Benennungssystem – das gesamte Team spricht die gleiche technische Sprache.</li>
+        <li>Optimierte Export-Workflows – saubere IFCs, professionelle PDFs, flüssige Koordination.</li>
+      </ul>
+    `,
+    image: 'images/Equipo4.png'
+  },
+  
+  expertise: {
+    titulo: 'Hochspezialisierte Dienstleistungen',
+    texto: `
+      <p><strong>Technische Expertise, wenn das Projekt mehr erfordert.</strong></p>
+      <ul>
+        <li>Multidisziplinäre BIM-Koordination – Architektur, Struktur und Installationen synchron.</li>
+        <li>Fotorealistische Renderings und technische Bilder für Wettbewerbe und Kunden.</li>
+        <li>Komplexe technische Modellierung – MEP-Installationen, einzigartige Strukturen, konstruktive Details.</li>
+        <li>AUTOCAD – BIM-Modellierung aus CAD-Plänen, technische Pläne in AutoCAD, Digitalisierung von Skizzen.</li>
+        <li>Terrestrisches und aeriales LIDAR-Scanning: Erfassung hochpräziser Punktwolken für die Modellierung bestehender Gebäude.</li>
+        <li>Drohnen-Photogrammetrie: topografische Vermessungen mit Millimetergenauigkeit in kürzerer Zeit.</li>
+        <li>KI-Analyse: Designoptimierung durch KI-Algorithmen und Automatisierung repetitiver Prozesse.</li>
+      </ul>
+      <p>
+        Wenn Sie Renderings-Beispiele sehen möchten, können Sie zum Startkarussell zurückkehren:
+        <a href="#inicio" class="enlace scrolly">Karussell ansehen</a>.
+      </p>
+    `,
+    image: 'images/Equipo1.png'
+  },
+  
+  flujo: {
+    titulo: 'Unser Workflow',
+    texto: `
+      <p><strong>Ein klarer Prozess, der ab dem ersten Tag Ergebnisse garantiert.</strong></p>
+      <p><strong>Phase 1: Erste Analyse.</strong></p>
+      <ul>
+        <li>Wir erhalten Ihre Dateien (jedes Format akzeptiert).</li>
+        <li>Wir führen eine unverbindliche technische Diagnose durch.</li>
+        <li>Wir definieren Ziele und Projektumfang.</li>
+      </ul>
+      <p><strong>Phase 2: Kollaborative Planung.</strong></p>
+      <ul>
+        <li>Detaillierter Vorschlag mit Zeitplan.</li>
+        <li>Gemeinsame Meilenstein-Überprüfungen.</li>
+        <li>Spezifische Lieferformate.</li>
+      </ul>
+      <p><strong>Phase 3: Agile Entwicklung.</strong></p>
+      <ul>
+        <li>Fortschreitende Modellierung mit teilweisen Lieferungen.</li>
+        <li>Koordinationssitzungen.</li>
+        <li>Echtzeit-Anpassungen gemäß Ihren Kommentaren.</li>
+      </ul>
+      <p><strong>Phase 4: Qualitätskontrolle.</strong></p>
+      <ul>
+        <li>Überprüfung der BIM/CAD-Standards.</li>
+        <li>Prüfung auf Kollisionen und Konsistenz.</li>
+        <li>Vollständige technische Validierung.</li>
+      </ul>
+      <p><strong>Phase 5: Endlieferung.</strong></p>
+      <ul>
+        <li>Vollständige und organisierte Dokumentation.</li>
+        <li>Für den sofortigen Einsatz bereite Formate.</li>
+        <li>Nachlieferungs-Support inklusive.</li>
+      </ul>
+    `,
+    image: 'images/Equipo2.png'
+  },
+  
+  formatos: {
+    titulo: 'Akzeptierte Formate',
+    texto: `
+      <p><strong>Wir arbeiten mit dem, was Sie bereits haben.</strong></p>
+      <p><strong>Allgemeine Formate:</strong></p>
+      <ul>
+        <li>PDF (Pläne, Skizzen, Dokumentation).</li>
+        <li>JPG/PNG-Bilder (Fotos, Referenzen).</li>
+        <li>Word/Excel-Dokumente (Spezifikationen).</li>
+      </ul>
+      <p><strong>Technische Formate:</strong></p>
+      <ul>
+        <li>AutoCAD (DWG, DXF).</li>
+        <li>Revit (RVT).</li>
+        <li>SketchUp (SKP).</li>
+        <li>ArchiCAD (PLN).</li>
+        <li>IFC (offene Modelle).</li>
+        <li>LIDAR-Punktwolken (E57, PTS, LAS, RCP).</li>
+        <li>Drohnen- und Photogrammetrie-Daten.</li>
+      </ul>
+    `,
+    image: 'images/Equipo4.png'
+  },
+  
+  calidad: {
+    titulo: 'Unser Qualitätsengagement',
+    texto: `
+      <p><strong>Wir garantieren Konsistenz und Professionalität bei jeder Lieferung.</strong></p>
+      <p><strong>Intelligente Nomenklatur:</strong></p>
+      <ul>
+        <li>Klare und logische Dateistruktur.</li>
+        <li>Beschreibende Namen gemäß Branchenstandards.</li>
+        <li>Organisierte und nachvollziehbare Versionen.</li>
+      </ul>
+      <p><strong>Professionelle Standards:</strong></p>
+      <ul>
+        <li>Maßgeschneiderte Modelle für Ihr Büro.</li>
+        <li>Vorkonfigurierte Ansichten.</li>
+        <li>Optimierte Layer-Verwaltung.</li>
+        <li>Konsistente Sichtbarkeitsregeln.</li>
+      </ul>
+      <p><strong>Umfassende Kontrolle:</strong></p>
+      <ul>
+        <li>Überprüfung von Geometrien und Topologien.</li>
+        <li>Validierung von BIM-Parametern.</li>
+        <li>Kollisionsprüfung.</li>
+      </ul>
+      <p><strong>Einsatzbereite Lieferungen:</strong></p>
+      <ul>
+        <li>Vollständige und autonome Pakete.</li>
+        <li>Klare technische Dokumentation.</li>
+        <li>Mit Ihrem Workflow kompatible Formate.</li>
+        <li>Implementierungsberatung.</li>
+      </ul>
+    `,
+    image: 'images/Equipo5.jpg'
+  },
+  
+  valoraciones: {
+    titulo: 'Referenzen',
+    texto: `
+      <p>★★★★★<br><strong>Frank Steiner – Einfamilienhaus-Studie</strong><br>
+      Espace_BIM begleitete uns bei der integralen Modellierung des Projekts und das Ergebnis übertraf unsere Erwartungen.
+      Ihre Revit-Beherrschung und die Klarheit der Lieferungen beschleunigten den gesamten Designprozess.
+      Sie sind äußerst reaktionsschnell und passten sich jeder Änderung an, ohne an Präzision zu verlieren.</p>
 
-        <p>★★★★★<br><strong>Francisco Suárez – Projet d'infrastructure</strong><br>
-        La coordination BIM a été impeccablement gérée. Je souligne leur capacité à anticiper les conflits
-        entre disciplines et proposer des solutions techniques solides. Leur support continu nous a permis
-        de maintenir le rythme du proyecto sans retards.</p>
+      <p>★★★★★<br><strong>Francisco Suárez – Infrastrukturprojekt</strong><br>
+      Die BIM-Koordination wurde einwandfrei verwaltet. Ich hebe ihre Fähigkeit hervor, Konflikte zwischen Disziplinen vorherzusehen
+      und solide technische Lösungen vorzuschlagen. Ihre kontinuierliche Unterstützung ermöglichte es uns,
+      das Projekttempo ohne Verzögerungen beizubehalten.</p>
 
-        <p>★★★★★<br><strong>Maria Borel – Documentation d'un ensemble historique</strong><br>
-        Le travail de photogrammétrie et d'analyse du patrimoine a été exceptionnel. Le niveau de détail du modèle 3D
-        et la fidélité du relevé ont dépassé les standards habituels du secteur.</p>
+      <p>★★★★★<br><strong>Maria Borel – Dokumentation eines historischen Ensembles</strong><br>
+      Die Photogrammetrie- und Bestandsanalysearbeit war außergewöhnlich. Das Detailniveau des 3D-Modells
+      und die Genauigkeit der Aufnahme übertrafen die üblichen Branchenstandards.</p>
 
-        <p>★★★★★<br><strong>Christine Meyer – Rendu et présentations</strong><br>
-        Les rendus ont beaucoup aidé à ce que le projet soit compris et approuvé sans problèmes.
-        Ils ont su capturer juste ce que nous voulions et ajuster les détails rapidement.</p>
+      <p>★★★★★<br><strong>Christine Meyer – Renderings und Präsentationen</strong><br>
+      Die Renderings halfen sehr dabei, dass das Projekt verstanden und problemlos genehmigt wurde.
+      Sie wussten genau zu erfassen, was wir wollten, und passten Details schnell an.</p>
 
-        <p>★★★★★<br><strong>Peter Fischer – Implémentation BIM</strong><br>
-        Ils nous ont aidés à implémenter BIM de façon pratique et adaptée à notre façon de travailler réellement.
-        La formation a été claire, directe et sans complications.</p>
+      <p>★★★★★<br><strong>Peter Fischer – BIM-Implementierung</strong><br>
+      Sie halfen uns, BIM auf praktische und an unsere tatsächliche Arbeitsweise angepasste Weise zu implementieren.
+      Die Schulung war klar, direkt und unkompliziert.</p>
 
-        <p>★★★★★<br><strong>Lucas Garcia – Installations complexes</strong><br>
-        La coordination entre CAD et BIM a été fluide et nous a fait gagner beaucoup de temps. Ils ont anticipé plusieurs problèmes
-        avant qu'ils n'apparaissent sur le chantier.</p>
+      <p>★★★★★<br><strong>Lucas Garcia – Komplexe Installationen</strong><br>
+      Die Koordination zwischen CAD und BIM verlief reibungslos und ließ uns viel Zeit sparen. Sie sagten mehrere Probleme voraus,
+      bevor sie auf der Baustelle auftraten.</p>
 
-        <p>★★★★★<br><strong>Hans Meier – Bâtiment historique</strong><br>
-        Le modèle généré à partir du relevé photogrammétrique a été très précis. Grâce à cela nous avons pu
-        tout planifier avec plus de sécurité.</p>
-      `,
-      image: 'images/Equipo1.png'
-    },
-    valores: {
-      titulo: 'Werte',
-      texto: `
-        <p><strong>Précision – Chaque détail compte.</strong><br>
-        Nous appliquons une méthodologie rigoureuse qui garantit cohérence et fiabilité dans chaque projet.</p>
+      <p>★★★★★<br><strong>Hans Meier – Historisches Gebäude</strong><br>
+      Das aus der photogrammetrischen Aufnahme generierte Modell war sehr präzise. Dadurch konnten wir
+      alles sicherer planen.</p>
+    `,
+    image: 'images/Equipo1.png'
+  },
+  
+  valores: {
+    titulo: 'Werte',
+    texto: `
+      <p><strong>Präzision – Jedes Detail zählt.</strong><br>
+      Wir wenden eine rigorose Methodik an, die Konsistenz und Zuverlässigkeit in jedem Projekt gewährleistet.</p>
 
-        <p><strong>Innovation – Technologie au service du projet.</strong><br>
-        Nous intégrons les outils les plus avancés : BIM collaboratif, photogrammétrie par drones pour relevés précis, 
-        et analyse avec IA pour optimisation de designs et détection automatique d'interférences.</p>
+      <p><strong>Innovation – Technologie im Dienst des Projekts.</strong><br>
+      Wir integrieren die fortschrittlichsten Tools: kollaboratives BIM, Drohnen-Photogrammetrie für präzise Aufnahmen,
+      und KI-Analyse für Designoptimierung und automatische Kollisionserkennung.</p>
 
-        <p><strong>Durabilité – Usage responsable des ressources.</strong><br>
-        Nos processus BIM optimisent les flux de travail, réduisent les erreurs et favorisent une planification
-        durable et une maintenance préventive.</p>
+      <p><strong>Nachhaltigkeit – Verantwortungsvoller Ressourceneinsatz.</strong><br>
+      Unsere BIM-Prozesse optimieren Workflows, reduzieren Fehler und fördern nachhaltige Planung
+      und vorbeugende Wartung.</p>
 
-        <p><strong>Accessibilité – La technologie à la portée de tous.</strong><br>
-        Nous démocratisons l'usage des environnements BIM et CAD pour les études de toute taille,
-        en nous adaptant au niveau d'expérience de chaque équipe.</p>
+      <p><strong>Zugänglichkeit – Technologie für alle erreichbar.</strong><br>
+      Wir demokratisieren die Nutzung von BIM- und CAD-Umgebungen für Büros jeder Größe,
+      indem wir uns an den Erfahrungslevel jedes Teams anpassen.</p>
 
-        <p><strong>Clarté – Information lisible et ordonnée.</strong><br>
-        Chaque plan et modèle est livré avec des nomenclatures propres et cohérentes.</p>
+      <p><strong>Klarheit – Lesbare und geordnete Informationen.</strong><br>
+      Jeder Plan und jedes Modell wird mit sauberen und konsistenten Nomenklaturen geliefert.</p>
 
-        <p><strong>Rigueur – Nous détectons les interférences avant qu'elles n'arrivent sur le chantier.</strong><br>
-        Nous anticipons les problèmes de coordination pour éviter des coûts imprévus.</p>
+      <p><strong>Strenge – Wir erkennen Kollisionen, bevor sie auf der Baustelle auftreten.</strong><br>
+      Wir antizipieren Koordinationsprobleme, um unerwartete Kosten zu vermeiden.</p>
 
-        <p><strong>Innovation technique – BIM collaboratif et IFC.</strong><br>
-        Nous utilisons l'exportation IFC et les flux collaboratifs pour une interopérabilité maximale.</p>
-      `,
-      image: 'images/Equipo2.png'
-    }
-  };
+      <p><strong>Technische Innovation – Kollaboratives BIM und IFC.</strong><br>
+      Wir nutzen IFC-Export und kollaborative Workflows für maximale Interoperabilität.</p>
+    `,
+    image: 'images/Equipo2.png'
+  }
+};
 
   const modal = document.getElementById('modal');
   const modalTexto = document.getElementById('modal-texto');
@@ -1325,7 +1370,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (window.innerWidth <= 960) {
         console.log('Click en acordeón móvil detectado');
         
-        // Si tiene data-target (submenú como SOLUTIONS, METHODIK)
+        // Si tiene data-target (submenú como SOLUTIONS, MÉTHODOLOGIE)
         if (this.hasAttribute('data-target')) {
           e.preventDefault();
           const target = this.getAttribute('data-target');
@@ -1348,7 +1393,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
           }
         }
-        // Si tiene data-modal (WERTE, REFERENZEN)
+        // Si tiene data-modal (VALEURS, TÉMOIGNAGES)
         else if (this.hasAttribute('data-modal')) {
           e.preventDefault();
           const modalType = this.getAttribute('data-modal');
