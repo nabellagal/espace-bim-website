@@ -1,10 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Versión francesa (raíz) -->
   <url>
-    <loc>https://www.espace-bim.com/</loc>
-    <lastmod>2024-12-01</lastmod>
+    <loc>https://espace-bim.com/</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Añade más páginas si las tienes -->
+  
+  <!-- Versión alemana -->
+  <url>
+    <loc>https://espace-bim.com/de/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Versión española -->
+  <url>
+    <loc>https://espace-bim.com/es/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Versión inglesa -->
+  <url>
+    <loc>https://espace-bim.com/en/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Versión francesa en carpeta (opcional, si mantienes /fr/) -->
+  <url>
+    <loc>https://espace-bim.com/fr/</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
