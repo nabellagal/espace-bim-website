@@ -1,15 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://espace-bim.com/">
-  <link rel="canonical" href="https://espace-bim.com/" />
-  <title>Redirection vers Espace_BIM</title>
-</head>
-<body>
-  <p>Redirection vers la version française principale...</p>
-</body>
-</html>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6SHJRD6R57"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-6SHJRD6R57');
+	</script>
+	
+	<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- HREFLANG -->
+<link rel="alternate" hreflang="fr" href="https://espace-bim.com/" />
+<link rel="alternate" hreflang="de" href="https://espace-bim.com/de/" />
+<link rel="alternate" hreflang="en" href="https://espace-bim.com/en/" />
+<link rel="alternate" hreflang="es" href="https://espace-bim.com/es/" />
+<link rel="alternate" hreflang="x-default" href="https://espace-bim.com/" />
+<!-- CANONICAL -->
+<link rel="canonical" href="https://espace-bim.com/" />
+<!-- Schema.org Service (FR) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Assistance BIM & CAD pour bureaux d’architecture",
+  "provider": {
+    "@type": "Organization",
+    "name": "Espace BIM",
+    "url": "https://espace-bim.com"
+  },
+  "areaServed": { "@type": "Country", "name": "Switzerland" },
+  "serviceArea": { "@type": "Country", "name": "Switzerland" },
+  "serviceType": "Support BIM & CAD, coordination Revit et production technique pour bureaux d’architecture"
+}
+</script>
+<!-- SCHEMA (FR - Suisse) -->
+
+<title>Support BIM pour bureaux d’architecture en Suisse | Espace BIM</title>
+	<meta name="description" content="Équipe BIM externe spécialisée en Revit, coordination BIM et production technique pour bureaux d’architecture en Suisse.">
+	<!-- Google Search Console Verification -->
+	<meta name="google-site-verification" content="lYnFgg4qHG39x_pyC00BbWqbb7jMwgUMo36Q5h6GPSs" />
+	
+	<!-- Meta Tags SEO MEJORADAS -->
+	
+	<meta name="keywords" content="BIM Suisse, Espace BIM, modélisation BIM Suisse, services Revit Suisse, AutoCAD Suisse, construction 3D Genève, architecture numérique Lausanne, services BIM Romandie, ingénierie architecturale suisse, scan de nuage de points Suisse">
+	<meta name="author" content="Espace_BIM">
+	<meta name="robots" content="index, follow">
+	
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content="Espace_BIM - Services BIM Suisse">
+	<meta property="og:description" content="Modélisation BIM professionnelle et services de construction 3D pour projets d'architecture en Suisse romande">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://espace-bim.com/">
+	<meta property="og:image" content="https://espace-bim.com/images/logo.jpg">
+	
+	<!-- Favicon -->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Espace_BIM - Services BIM Suisse">
+	<meta name="twitter:description" content="Modélisation BIM professionnelle et services de construction 3D">
+	<meta name="twitter:image" content="https://espace-bim.com/images/logo.jpg">
+	
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	
+	<style>
 * {
   box-sizing: border-box;
 }
@@ -206,6 +266,24 @@ body {
   font-weight: 600 !important;
   cursor: pointer;
   text-decoration: none;
+}
+/* ===== + visible sur tous les liens qui ouvrent un modal ===== */
+a[data-modal]::after,
+span[data-modal]::after {
+  content: " ➜ ";
+  font-weight: 900;
+  margin-left: 8px;
+  color: #006E91;
+}
+/* ❌ Sin iconos en el menú superior */
+#main-nav a[data-modal]::after {
+  content: "" !important;
+}
+@media (hover:hover){
+  a[data-modal]:hover::after,
+  span[data-modal]:hover::after{
+    color:#28f4ad;
+  }
 }
 .enlace:hover {
   color: #28f4ad !important;
@@ -497,7 +575,9 @@ footer img {
   .col-left .enlace:hover {
     color: #28f4ad !important;
   }
-  
+  .accordion-content-mobile a[data-modal]::after{
+  color:#ffffff;
+}
   .col-left .texto-descriptivo {
     color: #ffffff !important;
     font-weight: 400 !important;
@@ -585,36 +665,53 @@ footer img {
     padding-right: 40px !important;    /* espacio para la flecha */
     position: relative;
   }
+@media (hover:hover){
+.accordion-title-mobile:hover{
+color:#28f4ad !important;
+}
+.accordion-title-mobile:hover::after{
+color:#28f4ad !important;
+}
 
+
+.accordion-content-mobile a:hover{
+color:#28f4ad !important;
+}
+}
   /* Flecha bien colocada */
-  .accordion-title-mobile::after {
-    content: '▼';
-    font-size: 1.3rem !important;      /* flecha más grande */
-    position: absolute;
-    right: 0;                          /* flecha al borde */
-    top: 50%;                          /* centrada */
-    transform: translateY(-50%);
-    transition: transform 0.25s ease;
-  }
+  /* ============================ */
+/*  ACORDEÓN MÓVIL — ＋ / −     */
+/* ============================ */
 
-  /* Flecha al abrir */
-  .accordion-title-mobile.active::after {
-    transform: translateY(-50%) rotate(180deg);
-  }
+.accordion-title-mobile::after {
+  content: '＋';
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
 
-  /* Submenú transparente */
-  .accordion-content-mobile {
-    display: none;
-    padding-top: 12px;
-    background: transparent;
-  }
+.accordion-title-mobile.active::after {
+  content: '−';
+  color:#28f4ad;
+}
 
-  .accordion-content-mobile a {
-    display: block;
-    margin-bottom: 8px;
-    color: #fff;
-    text-decoration: none;
-  }
+.accordion-content-mobile {
+  display: none;
+  padding-top: 12px;
+  background: transparent;
+}
+
+.accordion-content-mobile a {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+}
 }
 
 /* ============================ */
@@ -811,31 +908,49 @@ footer img {
   <div class="col-left col-left-inicio">
     <h1>ESPACE_BIM</h1>
     <h2>Votre département BIM externe, disponible quand vous en avez besoin.</h2>
-    <p>
-      Reprenez le contrôle de vos délais avec notre équipe spécialisée en modélisation et documentation technique.
-      Nous prenons vos projets à n'importe quel stade et les livrons prêts à l'emploi, avec la rigueur qu'exige la profession.
-    </p>
- <div id="idiomas">
-  <strong>Langue:</strong>
-  <a href="/">FR</a> |           <!-- Cambiado: index.html → / -->
-  <a href="/es/">ES</a> |        <!-- Cambiado: index-es.html → /es/ -->
-  <a href="/en/">EN</a> |        <!-- Cambiado: index-en.html → /en/ -->
-  <a href="/de/">DE</a>          <!-- Cambiado: index-de.html → /de/ -->
+   <p>
+  Reprenez le contrôle de vos délais avec une <strong>équipe BIM &amp; CAD externe</strong> dédiée aux
+  <strong>bureaux d’architecture en Suisse</strong>. Nous intervenons sur <strong>Revit</strong>,
+  la <strong>coordination BIM</strong> et la <strong>production technique (BIM &amp; CAD)</strong>,
+  à n’importe quel stade du projet, avec des livrables prêts à intégrer.
+</p>
+<div id="idiomas">
+  <a href="/fr/">FR</a> |
+  <a href="/de/">DE</a> |
+  <a href="/en/">EN</a> |
+  <a href="/es/">ES</a>
 </div>
+
   </div>
 
   <!-- Colonne verte: seulement carrousel -->
   <div class="col-right">
     <div id="carrusel" class="swiper">
       <div class="swiper-wrapper">
-<div class="swiper-slide"><img src="../images/Foto1.png" alt="Projet 1"></div>
-<div class="swiper-slide"><img src="../images/Foto2.png" alt="Projet 2"></div>
-<div class="swiper-slide"><img src="../images/Foto3.png" alt="Projet 3"></div>
-<div class="swiper-slide"><img src="../images/Foto4.png" alt="Projet 4"></div>
-<div class="swiper-slide"><img src="../images/Foto5.png" alt="Projet 5"></div>
-<div class="swiper-slide"><img src="../images/Foto6.png" alt="Projet 6"></div>
-<div class="swiper-slide"><img src="../images/Foto7.png" alt="Projet 7"></div>
-<div class="swiper-slide"><img src="../images/Foto8.png" alt="Projet 8"></div>
+<div class="swiper-slide"><img src="../images/foto1-bim-support-architects.png"
+alt="BIM support for architecture studios"
+>
+</div>
+<div class="swiper-slide"><img src="../images/foto2-architecture-studios.png"
+alt="Architecture studios using BIM workflows"
+>
+</div>
+<div class="swiper-slide"><img src="../images/foto3-bim-outsourcing-switzerland.png"
+alt="BIM outsourcing services in Switzerland"
+>
+</div>
+<div class="swiper-slide"><img src="../images/foto4-bim-production-revit-cad.png"
+alt="BIM production using Revit and CAD"
+>
+</div>
+<div class="swiper-slide"><img src="../images/foto5-architectural-bim-model-revit.png"
+alt="Architectural BIM model developed in Revit"></div>
+<div class="swiper-slide"><img src="../images/foto6-revit-cad-bim-workflow.png"
+alt="Revit and CAD BIM workflow"></div>
+<div class="swiper-slide"><img src="../images/foto7-bim-collaboration-architecture-team.png"
+alt="BIM collaboration within architecture teams"></div>
+<div class="swiper-slide"><img src="../images/foto8-bim-services-switzerland.png"
+alt="BIM services for architects in Switzerland"></div>
       </div>
       <!-- Grandes flèches -->
       <div class="swiper-button-next"></div>
@@ -1082,7 +1197,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>Pics de charge de travail – support temporaire pour équipes saturées.</li>
         </ul>
       `,
-     image: '../images/Equipo3.png'
+     image: '/images/equipo3-technical-bim-support-architecture.png'
     },
     implementacion: {
       titulo: 'Évolution digitale / Implémentation BIM',
@@ -1096,7 +1211,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>Flux d'exportation optimisés – IFC propres, PDF professionnels, coordination fluide.</li>
         </ul>
       `,
-      image: '../images/Equipo4.png'
+      image: '/images/equipo4-external-bim-team.png'
     },
     expertise: {
       titulo: 'Services de haute spécialisation',
@@ -1116,7 +1231,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="#inicio" class="enlace scrolly">voir carrousel</a>.
         </p>
       `,
-      image: '../images/Equipo1.png'
+      image: '/images/equipo1-bim-coordination-architecture-switzerland.png'
     },
     flujo: {
       titulo: 'Notre flux de travail',
@@ -1153,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>Support post-livraison inclus.</li>
         </ul>
       `,
-      image: '../images/Equipo2.png'
+      image: '/images/equipo2-revit-bim-architecture-project.png'
     },
     formatos: {
       titulo: 'Formats que nous acceptons',
@@ -1176,7 +1291,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>Données de drones et photogrammétrie.</li>
         </ul>
       `,
-      image: '../images/Equipo4.png'
+      image: '/images/equipo4-external-bim-team.png'
     },
     calidad: {
       titulo: 'Notre engagement qualité',
@@ -1209,7 +1324,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <li>Conseil en implémentation.</li>
         </ul>
       `,
-      image: '../images/Equipo5.jpg'
+      image: '/images/equipo5-technical-bim-services-project.jpg'
     },
     valoraciones: {
       titulo: 'Témoignages',
@@ -1244,7 +1359,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Le modèle généré à partir du relevé photogrammétrique a été très précis. Grâce à cela nous avons pu
         tout planifier avec plus de sécurité.</p>
       `,
-      image: '../images/Equipo1.png'
+      image: '/images/equipo1-bim-coordination-architecture-switzerland.png'
     },
     valores: {
       titulo: 'Valeurs',
@@ -1273,7 +1388,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <p><strong>Innovation technique – BIM collaboratif et IFC.</strong><br>
         Nous utilisons l'exportation IFC et les flux collaboratifs pour une interopérabilité maximale.</p>
       `,
-      image: '../images/Equipo2.png'
+      image: '/images/equipo2-revit-bim-architecture-project.png'
     }
   };
 
@@ -1397,14 +1512,7 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('Todos los componentes inicializados');
 });
 
-        
-        // Toggle current submenu
-        if (!isActive) {
-          parent.classList.add('active');
-        } else {
-          parent.classList.remove('active');
-        }
-      
+    
 
   // Event listeners for submenu items
   document.querySelectorAll('.submenu a').forEach(link => {
@@ -1438,3 +1546,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 </script>
+
+</body>
+</html>
